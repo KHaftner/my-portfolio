@@ -896,7 +896,7 @@ a:active {
     }
 
     .bottom-content-wrapper {
-        gap: none;
+        gap: 0;
     }
 
     .bottom-content svg {
