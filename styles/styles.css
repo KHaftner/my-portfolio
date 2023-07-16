@@ -606,7 +606,7 @@ a:active {
     background-color: var(--purple-darker4);
     color: var(--white);
     cursor: pointer;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease;
     border: none;
 }
 
@@ -614,7 +614,6 @@ a:active {
 .filter-buttons .active {
     background-color: var(--pink-lighter2);
     color: var(--purple-darker4);
-    border: 1px solid var(--purple-darker4);
 }
 
 .skills-list h2 {
