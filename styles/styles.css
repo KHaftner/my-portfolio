@@ -1118,6 +1118,9 @@ details > p {
     img.me-pic {
         margin: 1rem;
     }
+    .about-page-wrapper svg {
+        max-width: 80%;
+    }
 
     .about-page-content {
         border-radius: 0.625rem 6.25rem / 7.5rem;
