@@ -701,7 +701,7 @@ a:active {
         fill: var(--white);
         width: 10rem;
         height: 10rem;
-        margin: 0 auto;
+        margin: -10rem auto 0;
         text-align: center;
         display: block;
         transition: all 0.4s ease;
