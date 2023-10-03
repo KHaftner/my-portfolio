@@ -782,16 +782,15 @@ a:active {
         var(--purple-darker3) 50%,
         var(--pink-lighter5) 50%
     );
-    background-size: 200% 100%;
+    background-size: 250% 150%;
     background-position: right bottom;
     color: var(--pink-darker5);
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     border-radius: 1rem;
     width: 60%;
     display: flex;
     justify-content: center;
     margin: 2rem auto 1rem;
-    border: 1px solid var(--pink-darker5);
     transition: all 0.4s ease-out;
     font-size: 1rem;
 }
