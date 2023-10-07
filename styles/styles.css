@@ -1199,6 +1199,15 @@ video {
   padding: 1rem;
 }
 
+.card-text-content {
+  background-color: var(--brand-pink);
+  border-radius: 0 0 0.75rem 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed var(--white);
+  border-left: 2px dashed var(--white);
+  border-right: 2px dashed var(--white);
+}
+
 .bottom-content h3 {
   background: linear-gradient(to right, var(--purple-darker3) 50%, var(--pink-lighter5) 50%);
   background-size: 250% 150%;
@@ -1215,12 +1224,10 @@ video {
 }
 
 .bottom-content p {
-  background-color: var(--purple-lighter5);
   border-radius: 0.75rem;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem 1rem;
   text-align: center;
-  font-size: 0.8rem;
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  line-height: 0.5rem;
 }
 
 .bottom-content h3:hover,
@@ -1243,13 +1250,14 @@ video {
 .bottom-content svg {
   max-width: 100%;
   background-color: var(--pink-lighter4);
-  border-radius: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
   height: auto;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
-  border: 2px dashed var(--white);
+  border-top: 2px dashed var(--white);
+  border-left: 2px dashed var(--white);
+  border-right: 2px dashed var(--white);
 }
 
 .bottom-content svg:last-child {
