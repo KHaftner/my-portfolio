@@ -1,0 +1,56 @@
+/* */ /* */ /* */ /* */ /* Colour Shade Variables */ /* */ /* */ /* */ /* */
+:root {
+    --brand-pink: #fdc8db;
+    --pink-lighter: #fdd0e0;
+    --pink-lighter2: #fed6e4;
+    --pink-lighter3: #fedbe8;
+    --pink-lighter4: #fee1eb;
+    --pink-lighter5: #fee9f1;
+    --transparent-pink: #fdc8db56;
+    --pink-darker: #efa6c0;
+    --pink-darker2: #d795ad;
+    --pink-darker3: #b37d90;
+    --pink-darker4: #8f6473;
+    --pink-darker5: #6c4b56;
+    --pink-darker6: #48323a;
+    --pink-darker7: #181113;
+    --brand-purple: #dbc4f3;
+    --purple-lighter: #e0cdf5;
+    --purple-lighter2: #e4d3f6;
+    --purple-lighter3: #e9dcf8;
+    --purple-lighter4: #ede2f9;
+    --purple-lighter5: #f6f0fc;
+    --purple-darker: #be9edf;
+    --purple-darker2: #987eb2;
+    --purple-darker3: #856f9c;
+    --purple-darker4: #69577b;
+    --purple-darker5: #4c3f59;
+    --purple-darker6: #26202d;
+    --transparent-dark-purple: #4c3f59dc;
+    --brand-peach: #fedfb8;
+    --peach-lighter: #fee9cd;
+    --peach-lighter2: #feedd8;
+    --peach-lighter3: #fff2e3;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* */ /* */ /* */ /* */ /* Font Family Variables */ /* */ /* */ /* */ /* */
+:root {
+    --large-heading-text: "Shadows Into Light", serif;
+    --heading-text: "Merriweather", serif;
+    --paragraph-text: "Raleway", sans-serif;
+}
+
+/* */ /* */ /* */ /* */ /* Shadow Variables */ /* */ /* */ /* */ /* */
+:root {
+    --all-around-shadow: var(--pink-lighter5) 4px 4px 0px 0px,
+        var(--pink-darker6) 5px 5px 0px 0px;
+    --solid-button-shadow: 0px 10px 13px -7px var(--pink-darker6),
+        10px 10px 0px 2px var(--pink-darker6);
+    --bottom-shadow: 0px 2px 4px var(--pink-darker6);
+    --text-shadow: var(--pink-lighter5) 4px 4px 0px,
+        var(--pink-darker6) 5px 5px 0px;
+    --text-shadow2: var(--pink-lighter5) 1.5px 1.5px 0px,
+        var(--pink-darker6) 1.75px 1.75px 0px;
+}

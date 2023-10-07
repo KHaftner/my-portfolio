@@ -1,0 +1,71 @@
+/* */ /* */ /* */ /* */ /* Main Layout */ /* */ /* */ /* */ /* */
+
+body {
+    font-family: var(--paragraph-text);
+    color: var(--pink-darker6);
+    font-size: 1rem;
+    background-color: var(--brand-pink);
+}
+
+/* Scrollbar */
+
+/* Firefox */
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #d795ad #fee9f1;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 1.25rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: #fee9f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #d795ad;
+    border-radius: 0.625rem;
+    border: 3px groove #fed6e4;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-text);
+}
+
+p {
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+a,
+a:visited {
+    color: var(--purple-darker3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--purple-darker);
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 1px dotted var(--purple-darker2);
+}
+
+a:active {
+    color: var(--purple-darker2);
+}
+
+.site-wrapper {
+    background-color: var(--pink-lighter5);
+    max-width: 120rem;
+    margin: 0 auto;
+    border: 1px solid var(--purple-darker2);
+}

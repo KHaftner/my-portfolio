@@ -1,0 +1,99 @@
+/* */ /* */ /* */ /* */ /* Site Header */ /* */ /* */ /* */ /* */
+
+.site-header {
+    background-color: transparent;
+    transition: all ease 0.5s;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.site-header.scrolled {
+    background-image: linear-gradient(
+        200deg,
+        var(--brand-pink),
+        var(--pink-lighter4)
+    );
+    box-shadow: 1px 1px 5px #808080c9, -1px -1px 5px #808080d9;
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    font-family: var(--paragraph-text);
+    font-size: clamp(0.9rem, 4vw, 1.25rem);
+    font-weight: 500;
+}
+
+.main-navigation ul {
+    background-color: var(--pink-lighter5);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    border: 0.1rem dashed var(--purple-darker2);
+}
+
+.main-navigation li {
+    list-style: none;
+    display: inline-block;
+}
+
+.main-navigation li:not(:last-child)::after {
+    content: " | ";
+    padding: 0 0.25rem;
+    color: var(--purple-darker2);
+    font-weight: 600;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: var(--pink-darker6);
+    background-image: linear-gradient(
+        var(--purple-darker2),
+        var(--purple-darker2)
+    );
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all 0.4s ease-out;
+}
+
+.main-navigation a:hover {
+    background-size: calc(100% - 2em) 5px, auto;
+    background-size: 100% 2px, auto;
+}
+
+.logo svg {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    margin: 0 -0.5rem;
+}
+
+@media (min-width: 40em) {
+    .site-header {
+        height: 6.5rem;
+    }
+    .main-navigation ul {
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+    }
+
+    .main-navigation li:not(:last-child)::after {
+        padding: 1.25rem;
+    }
+
+    .logo svg {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 -0.85rem;
+    }
+}

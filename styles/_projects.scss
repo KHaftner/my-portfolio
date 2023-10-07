@@ -1,0 +1,265 @@
+/* */ /* */ /* */ /* */ /* Projects Pages */ /* */ /* */ /* */ /* */
+
+.projects-page-wrapper {
+    background-color: #fdc8db;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FEE9F1'/%3E%3Cstop offset='1' stop-color='%23FEE9F1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='13' height='13' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23FDC8DB' cx='6.5' cy='6.5' r='6.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.27'/%3E%3C/svg%3E");
+    overflow: hidden;
+}
+
+.bottom-git-wrapper {
+    max-width: 35rem;
+    text-align: center;
+    background-color: var(--pink-lighter2);
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-git-wrapper a {
+    background: linear-gradient(
+        to right,
+        var(--purple-darker3) 50%,
+        var(--pink-lighter5) 50%
+    );
+    max-width: 12rem;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: var(--pink-darker5);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    margin: 1rem auto;
+    border: 1px solid var(--pink-darker5);
+    transition: all 0.5s ease-out;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bottom-git-wrapper a:hover {
+    background-position: left bottom;
+    color: var(--pink-lighter5);
+}
+
+.projects-page-wrapper h3 {
+    text-align: center;
+    display: block;
+}
+
+.projects-page-wrapper header {
+    background-color: var(--pink-lighter2);
+}
+
+img.polaroid {
+    margin: 2rem auto;
+    display: block;
+}
+
+img.polaroid-preview:hover {
+    transform: rotate(-3.75deg);
+    cursor: pointer;
+}
+
+.my-project-info .bottom-git-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 24rem;
+}
+
+.my-project-info .bottom-git-wrapper a {
+    width: 10rem;
+}
+
+a.bottom-projects {
+    background-color: var(--purple-darker3);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 0px var(--pink-darker7);
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+figure {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 0 1rem;
+}
+
+figure img {
+    margin: 0 auto;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.thumbnail-size {
+    max-width: min(10rem, 15vw);
+}
+
+.flex-container-fave {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+p.ongoing {
+    text-align: center;
+    font-size: 1.5rem;
+}
+a.bottom-projects:hover,
+a.bottom-projects:active {
+    background-color: var(--purple-darker5);
+}
+
+.showcased-projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    text-align: center;
+    gap: 2rem;
+    margin: 4rem auto 4rem;
+    padding-left: 1.5rem;
+}
+
+.showcased-projects img {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 3px 3px 2px 4px rgba(0, 0, 0, 0.1);
+    transform: rotate(-5deg);
+    border-radius: 0.25rem;
+    transition: all 0.5s ease;
+}
+
+.showcased-projects img:hover,
+.showcased-projects img:active {
+    transform: rotate(0deg);
+    border: 1px solid var(--purple-darker2);
+}
+
+.my-project-info {
+    margin: 2rem auto;
+    background-color: var(--pink-lighter4);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 96%;
+    border: 1px solid var(--purple-darker3);
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.my-project-info h2,
+.my-project-info h3 {
+    text-align: center;
+    letter-spacing: 0.25rem;
+    font-size: 2rem;
+}
+
+.my-project-info h2 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--brand-purple);
+}
+
+.my-project-info h3:first-of-type {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+    background-image: linear-gradient(
+        200deg,
+        var(--pink-darker4),
+        var(--purple-darker4)
+    );
+    color: var(--white);
+    padding: 0.5rem 0.25rem;
+    border-radius: 0.25rem;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 35em) {
+    .flex-container-fave {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 43.75em) {
+    .showcased-projects {
+        position: relative;
+        height: 25rem;
+    }
+    .showcased-projects img {
+        max-width: clamp(15rem, 25vw, 25rem);
+        position: absolute;
+    }
+
+    .showcased-projects img.abby {
+        top: 5%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        transform: rotate(-10deg);
+        z-index: 2;
+    }
+
+    .showcased-projects img.amazilia {
+        top: 3%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        transform: rotate(15deg);
+        z-index: 3;
+    }
+
+    .showcased-projects img.movies {
+        top: 28%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        transform: rotate(-15deg);
+        z-index: 4;
+    }
+
+    .showcased-projects img:hover {
+        transform: rotate(0deg);
+        z-index: 5;
+    }
+
+    .my-project-info {
+        max-width: 38rem;
+    }
+}
+
+@media (min-width: 75em) {
+    .showcased-projects {
+        height: 35rem;
+    }
+}
+
+@media (min-width: 105em) {
+    .showcased-projects {
+        height: 40rem;
+    }
+    .showcased-projects img.abby {
+        left: 56%;
+    }
+
+    .showcased-projects img.amazilia {
+        left: 18%;
+    }
+
+    .showcased-projects img.movies {
+        left: 38%;
+    }
+}
