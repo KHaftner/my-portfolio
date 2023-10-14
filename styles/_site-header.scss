@@ -20,7 +20,7 @@
         var(--brand-pink),
         var(--pink-lighter4)
     );
-    box-shadow: 1px 1px 5px #808080c9, -1px -1px 5px #808080d9;
+    box-shadow: 1px 1px 2px #808080c9, -1px -1px 2px #808080d9;
 }
 
 .main-navigation {
@@ -37,7 +37,7 @@
     background-color: var(--pink-lighter5);
     padding: 0.75rem;
     border-radius: 0.75rem;
-    border: 1px solid var(--pink-dark2);
+    border: 1px solid var(--pink-mid5);
 }
 
 .main-navigation li {
