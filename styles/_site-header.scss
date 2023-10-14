@@ -37,7 +37,7 @@
     background-color: var(--pink-lighter5);
     padding: 0.75rem;
     border-radius: 0.75rem;
-    border: 0.1rem dashed var(--purple-darker2);
+    border: 1px solid var(--pink-dark2);
 }
 
 .main-navigation li {
@@ -48,17 +48,14 @@
 .main-navigation li:not(:last-child)::after {
     content: " | ";
     padding: 0 0.25rem;
-    color: var(--purple-darker2);
+    color: var(--pink-dark2);
     font-weight: 600;
 }
 
 .main-navigation a {
     text-decoration: none;
     color: var(--pink-darker6);
-    background-image: linear-gradient(
-        var(--purple-darker2),
-        var(--purple-darker2)
-    );
+    background-image: linear-gradient(var(--pink-dark2), var(--pink-dark2));
     background-size: 0 2px, auto;
     background-repeat: no-repeat;
     background-position: center bottom;

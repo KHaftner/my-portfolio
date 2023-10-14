@@ -78,6 +78,12 @@ document.addEventListener("DOMContentLoaded", function () {
     showAllItems();
 });
 
+// Initialize AOS
+
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init();
+  });
+
 /* Add this later, no time right now...
 
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tab_img_gallery

@@ -28,6 +28,7 @@
 
     <link rel="stylesheet" href="styles/normalize-fwd.css" type="text/css" />
     <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 
 </head>
 
@@ -50,14 +51,14 @@
                                 }
 
                                 .st111 {
-                                    fill: #987eb2;
-                                    stroke: #d795ad;
+                                    fill: var(--pink-dark2);
+                                    stroke: #ffaebd;
                                     stroke-width: 6;
                                     stroke-miterlimit: 10;
                                 }
 
                                 .st222 {
-                                    fill: #fdc8db;
+                                    fill: #ffaebd;
                                 }
 
                                 .st333 {
@@ -111,14 +112,14 @@
                                 }
 
                                 .st111 {
-                                    fill: #987eb2;
-                                    stroke: #d795ad;
+                                    fill: var(--pink-dark2);
+                                    stroke: #ffaebd;
                                     stroke-width: 6;
                                     stroke-miterlimit: 10;
                                 }
 
                                 .st222 {
-                                    fill: #fdc8db;
+                                    fill: #ffaebd;
                                 }
 
                                 .st333 {
@@ -160,8 +161,10 @@
                 <div class="above-fold-wrapper">
                     <div class="page-header-wrapper">
                         <header class="index-page-header">
-                            <h1>Kassandra Haftner</h1>
-                            <h2>Front-End Web Developer.</h2>
+                            <div class="animation" data-aos="fade-up" data-aos-delay="400">
+                                <h1>Kassandra Haftner</h1>
+                                <h2>Front-End Web Developer.</h2>
+                            </div>
                         </header>
                     </div>
 
@@ -178,11 +181,11 @@
                                     }
 
                                     .st11 {
-                                        fill: var(--purple-darker2);
+                                        fill: var(--pink-dark2);
                                     }
 
                                     .st22 {
-                                        fill: var(--brand-pink);
+                                        fill: var(--pink-mid);
                                     }
                                 </style>
                                 <circle class="st00" cx="330" cy="183.1" r="23.8" />
@@ -241,7 +244,7 @@
         <section class="below-fold-content" id="below-fold-content">
 
             <div class="intro-message">
-                <h2>Welcome.</h2>
+                <h2 data-aos="zoom-in-right" data-aos-delay="200">Welcome.</h2>
                 <div class="p-container">
                     <p class="intro-p">
                         I'm a front-end web developer based in Metro Vancouver,
@@ -271,7 +274,7 @@
             </div>
 
             <div class="bottom-img-wrapper">
-                <img src="images/portfolio-drawing.png" alt="A cartoon drawing of myself" loading="lazy" />
+                <img src="images/portfolio-drawing.png" alt="A cartoon drawing of myself" loading="lazy" data-aos="zoom-in-left" data-aos-delay="200" />
             </div>
 
         </section>
@@ -280,7 +283,7 @@
 
         <section class="skills-list" id="skills-list">
             <div class="skills-top-wrapper">
-                <h2>Toolkit.</h2>
+                <h2 data-aos="fade-right" data-aos-delay="200">Toolkit.</h2>
                 <div class="skills-top-svg">
                     <svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <title>Code Symbol Drawing</title>
@@ -665,13 +668,13 @@
 
         <section class="bottom-content" id="bottom-content">
             <div class="bottom-content-top">
-                <h2>Explore.</h2>
+                <h2 data-aos="zoom-in" data-aos-delay="100">Explore.</h2>
             </div>
 
             <div class="bottom-content-wrapper">
 
                 <div class="main-card">
-                    <article>
+                    <article  data-aos="flip-left" data-aos-delay="200">
                         <div class="overlay-card">
                             <a href="projects.html">
                                 <svg width="900" height="600" viewBox="0 0 900 600" fill="none"
@@ -762,7 +765,7 @@
                     </article>
                 </div>
                 <div class="main-card">
-                    <article>
+                    <article  data-aos="flip-left" data-aos-delay="300">
                         <div class="overlay-card">
                             <a href="about.html">
                                 <svg width="900" height="600" viewBox="0 0 900 600" fill="none"
@@ -879,7 +882,7 @@
                 </div>
 
                 <div class="main-card">
-                    <article>
+                    <article  data-aos="flip-left" data-aos-delay="400">
                         <div class="overlay-card">
                             <a href="contact.html">
                                 <svg width="900" height="600" viewBox="0 0 900 600" fill="none"
@@ -1037,6 +1040,7 @@
     </div>
 
     <script src="scripts/scripts.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
 </body>
 
 </html>
