@@ -34,9 +34,10 @@
 }
 
 .main-navigation ul {
-    background-color: var(--white);
+    background-color: var(--pink-lighter5);
     padding: 0.75rem;
     border-radius: 0.75rem;
+    border: 1px dashed var(--purple-darker3);
 }
 
 .main-navigation li {
