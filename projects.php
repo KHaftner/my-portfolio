@@ -27,7 +27,7 @@ error_reporting(E_ALL);
                 </header>
                 <section class="showcased-projects">
                     <article>
-                        <a href="project-movies.html">
+                        <a href="project-movies.php">
                             <img src="images/movie-polaroid.jpg"
                                 alt="A polaroid image with a preview of the Movie Love website"
                                 class="polaroid-preview movies bottom">
@@ -37,7 +37,7 @@ error_reporting(E_ALL);
                         </a>
                     </article>
                     <article>
-                        <a href="project-abby.html">
+                        <a href="project-abby.php">
                             <img src="images/abby-polaroid.jpg"
                                 alt="A polaroid image with a preview of the Abby Wants to Play game"
                                 class="polaroid-preview abby bottom">
@@ -47,7 +47,7 @@ error_reporting(E_ALL);
                         </a>
                     </article>
                     <article>
-                        <a href="project-amazilia.html">
+                        <a href="project-amazilia.php">
                             <img src="images/amazilia-polaroid.jpg"
                                 alt="A polaroid image for the Amazilia Acrescapers project"
                                 class="polaroid-preview amazilia bottom">

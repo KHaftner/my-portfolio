@@ -537,7 +537,7 @@ error_reporting(E_ALL);
                 <div class="main-card">
                     <article  data-aos="flip-left" data-aos-delay="200">
                         <div class="overlay-card">
-                            <a href="projects.html">
+                            <a href="projects.php">
                                 <svg width="900" height="600" viewBox="0 0 900 600" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <title>Code Symbol Image</title>
@@ -618,7 +618,7 @@ error_reporting(E_ALL);
                             </a>
                         </div>
                         <div class="card-text-content">
-                            <a href="projects.html">
+                            <a href="projects.php">
                                 <h3>My Projects.</h3>
                             </a>
                             <p>Curious about my creations? 😎</p>
@@ -628,7 +628,7 @@ error_reporting(E_ALL);
                 <div class="main-card">
                     <article  data-aos="flip-left" data-aos-delay="300">
                         <div class="overlay-card">
-                            <a href="about.html">
+                            <a href="about.php">
                                 <svg width="900" height="600" viewBox="0 0 900 600" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <title>Smiley Face & Heart</title>
@@ -734,7 +734,7 @@ error_reporting(E_ALL);
                             </a>
                         </div>
                         <div class="card-text-content">
-                            <a href="about.html">
+                            <a href="about.php">
                                 <h3>About Me.</h3>
                             </a>
                             <p>Find out more about me! 😄</p>
@@ -745,7 +745,7 @@ error_reporting(E_ALL);
                 <div class="main-card">
                     <article  data-aos="flip-left" data-aos-delay="400">
                         <div class="overlay-card">
-                            <a href="contact.html">
+                            <a href="contact.php">
                                 <svg width="900" height="600" viewBox="0 0 900 600" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <title>Phone and Message Image</title>
@@ -826,7 +826,7 @@ error_reporting(E_ALL);
                             </a>
                         </div>
                         <div class="card-text-content">
-                            <a href="contact.html">
+                            <a href="contact.php">
                                 <h3>Contact Me.</h3>
                             </a>
                             <p>Looking to get in touch? 😊</p>
