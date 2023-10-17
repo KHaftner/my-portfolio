@@ -231,7 +231,7 @@
 
 .below-fold-content h2 {
     font-family: var(--large-heading-text);
-    color: var(--pink-dark5);
+    color: var(--purple-darker2);
     font-size: clamp(5rem, 10vw, 10rem);
     margin: 1rem auto 5.5rem;
     text-shadow: var(--text-shadow);
@@ -407,9 +407,10 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    background-color: var(--brand-purple);
+    background-color: var(--pink-mid);
     padding: 1rem;
     margin-bottom: -1rem;
+    border-top: 2px dashed var(--white);
 }
 
 .filter-buttons button {
@@ -431,7 +432,7 @@
 
 .skills-list h2 {
     font-family: var(--large-heading-text);
-    color: var(--purple-darker3);
+    color: var(--purple-darker2);
     font-size: clamp(6rem, 8vw, 8rem);
     margin: 0 auto;
     text-shadow: var(--text-shadow);
@@ -510,7 +511,7 @@
 
 @media (min-width: 100em) {
     .skills-bottom-svg svg.the-down-button {
-        fill: var(--white);
+        fill: var(--purple-darker2);
         width: 10rem;
         height: 10rem;
         margin: -10rem auto 0;
@@ -580,7 +581,7 @@
 
 .bottom-content-top h2 {
     font-family: var(--large-heading-text);
-    color: var(--purple-darker3);
+    color: var(--purple-darker2);
     font-size: clamp(4rem, 6vw, 6rem);
     margin: 0 auto;
     text-shadow: var(--text-shadow);
