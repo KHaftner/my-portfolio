@@ -20,7 +20,7 @@ error_reporting(E_ALL);
         <main id="site-main">
             <div class="contact-page-wrapper">
                 <header class="other-page-header">
-                    <h1>Contact Me.</h1>
+                    <h1 data-aos="zoom-in" data-aos-delay="250">Contact Me.</h1>
                     <h2 class="contact-h2">I'm delighted that you'd like to get in touch. 🌸</h2>
                 </header>
 
@@ -101,6 +101,7 @@ error_reporting(E_ALL);
         require "site-footer.php";
         ?>
         <script src="scripts/scripts.js"></script>
+        <script src="node_modules/aos/dist/aos.js"></script>
 </body>
 
 </html>

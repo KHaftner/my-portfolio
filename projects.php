@@ -20,7 +20,7 @@ error_reporting(E_ALL);
         <main id="site-main">
             <div class="projects-page-wrapper">
                 <header class="other-page-header">
-                    <h1>My Projects.</h1>
+                    <h1 data-aos="zoom-in" data-aos-delay="250">My Projects.</h1>
                     <h2>
                         I love to code! 🌸
                     </h2>
@@ -73,6 +73,7 @@ error_reporting(E_ALL);
         ?>
     </div>
     <script src="scripts/scripts.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
 </body>
 
 </html>

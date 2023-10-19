@@ -19,7 +19,7 @@ error_reporting(E_ALL);
         <main id="site-main">
             <div class="about-page-wrapper">
                 <header class="other-page-header">
-                    <h1>About Me.</h1>
+                    <h1 data-aos="zoom-in" data-aos-delay="250">About Me.</h1>
                     <h2>I appreciate your interest! 🌸 </h2>
                 </header>
 
@@ -163,6 +163,7 @@ error_reporting(E_ALL);
         ?>
     </div>
     <script src="scripts/scripts.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
 </body>
 
 </html>
