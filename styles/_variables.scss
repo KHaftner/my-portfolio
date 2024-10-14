@@ -54,13 +54,29 @@
     --blue-main: #add3fa;
     --blue-lighter: #d6e9fd;
     --blue-darker: #8aa9c8;
+    --black-ish: #4d4d4d;
+    --light-pink: #f5d2d6;
+    --bright-pink: #ff7bac;
+    --medium-pink: #ffb7d1;
+
+    /* Transparent Backgrounds */
+    --transparent-pink: #f5d2d67e;
+    --transparent-pink-2: #ff7bab4f;
+    --transparent-white: #ffffff88;
+    --transparent-white-2: #ffffffbf;
+    --transparent-purple: #dc72ff3d;
+    --transparent-purple-2: #a17fff4f;
+    --transparent-blue: #23abff4f;
+    --transparent-blue-2: #7d99ff4f;
+    --transparent-green: #0effa34f;
+    --transparent-green-2: #7dff744f;
 }
 
 /* */ /* */ /* */ /* */ /* Font Family Variables */ /* */ /* */ /* */ /* */
 :root {
-    --large-heading-text: "Shadows Into Light", serif;
+    --large-heading-text: "Square Peg", serif;
     --heading-text: "Merriweather", serif;
-    --paragraph-text: "Raleway", sans-serif;
+    --paragraph-text: "Manrope", sans-serif;
 }
 
 /* */ /* */ /* */ /* */ /* Shadow Variables */ /* */ /* */ /* */ /* */
@@ -74,4 +90,8 @@
         var(--pink-darker6) 5px 5px 0px;
     --text-shadow2: var(--pink-lighter5) 1.5px 1.5px 0px,
         var(--pink-darker6) 1.75px 1.75px 0px;
+    --box-shadow: 1px 1px 4px #808080c9;
+    --heading-text-shadow: 2px 2px 1px #4d4d4d;
+    --nav-text-shadow: 0px 1px 1px #808080c9;
+    --text-shadow3: 1px 1px 1px #4d4d4d;
 }

@@ -7,28 +7,29 @@ body {
     background-color: var(--brand-pink);
 }
 
-/* Scrollbar */
+/*-----------------------------------------------------------
+    SCROLLBAR STYLES
+-----------------------------------------------------------*/
 
-/* Firefox */
-
-* {
-    scrollbar-width: auto;
-    scrollbar-color: #d795ad #fee9f1;
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 1.25rem;
+/* https://developer.chrome.com/docs/css-ui/scrollbar-styling */
+/* Legacy Browsers */
+*::-webkit-scrollbar-thumb {
+    background: var(--bright-pink);
 }
 
 *::-webkit-scrollbar-track {
-    background: #fee9f1;
+    background: var(--light-pink);
 }
 
-*::-webkit-scrollbar-thumb {
-    background-color: #d795ad;
-    border-radius: 0.625rem;
-    border: 3px groove #fed6e4;
+*::-webkit-scrollbar {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+/* Modern Browsers that have scrollbar styling support. */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--bright-pink) var(--light-pink);
 }
 
 h1,

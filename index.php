@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Front-End Web Developer";
+$pageTitle = "Web Developer";
 require "head.php";
 include "svgs.php";
 ini_set('display_errors', '1');
@@ -21,7 +21,7 @@ error_reporting(E_ALL);
                         <header class="index-page-header">
                             <div class="animation" data-aos="fade-up" data-aos-delay="400">
                                 <h1>Kassandra Haftner</h1>
-                                <h2>Front-End Web Developer.</h2>
+                                <h2>Web Developer.</h2>
                             </div>
                         </header>
                     </div>
@@ -107,20 +107,11 @@ error_reporting(E_ALL);
                 <h2 data-aos="zoom-in-right" data-aos-delay="200">Welcome.</h2>
                 <div class="p-container">
                     <p class="intro-p">
-                        I'm a front-end web developer based in Metro Vancouver,
-                        British Columbia (Canada). 🌸
+                        I'm a freelance web developer based in Metro Vancouver, British Columbia.
                     </p>
-                    <p>I make fully responsive websites using careful attention to detail,
-                        semantic markup, and the overall user experience. I particularly enjoy learning new tricks with
-                        CSS (even though we fight sometimes 😉).
-                    </p>
-                    <p>
-                        I enjoy the challenges and opportunities for growth that
-                        come with front-end development. I work hard and put a
-                        lot of love into my projects to ensure that they run quickly and cleanly, with some added
-                        uniqueness as well! I take feedback very seriously, and I aim to consistently grow every day.
-                        <em><strong>Hello World!</strong></em> 💖
-                    </p>
+                    <p>I appreciate you taking the time to check out my work! Currently, I'm a student at Thompson Rivers University, working towards a Bachelor of Computing Science.</p>
+                    <p>In addition to my current studies, I have also completed the Front-End Web Developer program at BCIT.</p>
+                    <p>If you're looking for some help or collaboration on a web development project, I'd be happy to help you out.</p>
 
                     <a href="#skills-list"><svg class="the-down-button" clip-rule="evenodd" fill-rule="evenodd"
                             stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
