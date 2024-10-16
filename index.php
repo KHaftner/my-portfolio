@@ -21,7 +21,7 @@ error_reporting(E_ALL);
                         <header class="index-page-header">
                             <div class="animation" data-aos="fade-up" data-aos-delay="400">
                                 <h1>Kassandra Haftner</h1>
-                                <h2>Web Developer.</h2>
+                                <h2>Freelance Web Developer.</h2>
                             </div>
                         </header>
                     </div>
@@ -42,7 +42,7 @@ error_reporting(E_ALL);
                 </section>
         </div>
 
-        <section class="below-fold-content shapedividers_com-986" id="below-fold-content">
+        <section class="below-fold-content" id="below-fold-content">
 
             <div class="intro-message">
                 <h2 data-aos="zoom-in-right" data-aos-delay="200">Welcome.</h2>
@@ -66,7 +66,7 @@ error_reporting(E_ALL);
             </div>
 
             <div class="bottom-img-wrapper">
-                <img src="images/portfolio-drawing.png" alt="A cartoon drawing of myself" loading="lazy" data-aos="zoom-in-left" data-aos-delay="200" />
+                <img src="images/abby-computer.png" alt="A dog sitting at a computer with a cup of coffee" loading="lazy" data-aos="zoom-in-left" data-aos-delay="200" />
             </div>
 
         </section>

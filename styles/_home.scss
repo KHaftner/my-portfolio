@@ -16,9 +16,9 @@
 
 .index-page-header h1 {
     scroll-margin-top: 5rem;
-    font-family: var(--large-heading-text);
+    font-family: var(--alice);
     color: var(--bright-pink);
-    font-size: clamp(6rem, 10vw, 10rem);
+    font-size: clamp(3rem, 6vw, 6rem);
     margin: 0 auto;
     padding-top: 12rem;
     text-shadow: var(--text-shadow3);
@@ -42,11 +42,11 @@
     display: block;
     width: 100%;
     text-align: center;
-    font-family: var(--paragraph-text);
+    font-family: var(--libre-frank);
     letter-spacing: 0.5rem;
     color: var(--black-ish);
-    font-weight: 600;
-    font-size: clamp(1.25rem, 3vw, 3rem);
+    font-weight: 300;
+    font-size: clamp(1.25rem, 2vw, 2rem);
     line-height: 2rem;
     max-width: 100%;
 }
@@ -147,9 +147,6 @@
         margin-top: 8rem;
     }
     .index-page-header h2 {
-        letter-spacing: 1rem;
-        font-weight: 600;
-        text-shadow: 1px 1px 0px var(--black);
         padding: 2rem;
     }
 
