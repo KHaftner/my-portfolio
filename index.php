@@ -20,8 +20,8 @@ error_reporting(E_ALL);
                     <div class="page-header-wrapper">
                         <header class="index-page-header">
                             <div class="animation" data-aos="fade-up" data-aos-delay="400">
-                                <h1>Web Development <br><span class="h1-part2">in Full Bloom</span></h1>
-                                <h2>Welcome to my portfolio.</h2>
+                                <h1>Web Development <br><span class="h1-part2">in</span> <span class="h1-part3">Full Bloom</span></h1>
+                                <h2>Kassandra Haftner's Portfolio.</h2>
                             </div>
                         </header>
                     </div>

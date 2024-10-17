@@ -4,43 +4,46 @@
     margin-top: -6rem;
 }
 
-.above-fold-wrapper {
-    background-color: var(--transparent-white);
-    background-image: url(../images/index-above-fold2.jpg);
-    background-size: cover;
-    background-blend-mode: soft-light;
-    background-position: 50% 30%;
-    background-repeat: no-repeat;
-}
-
 .index-page-header h1 {
     scroll-margin-top: 5rem;
-    font-family: var(--alice);
-    color: var(--bright-pink);
-    font-size: clamp(3rem, 6vw, 6rem);
-    margin: 0 auto;
+    font-family: var(--italiana);
+    color: var(--black-ish);
+    font-size: clamp(2rem, 4vw, 4rem);
+    margin: 0 4rem;
     padding-top: 12rem;
     text-shadow: var(--text-shadow3);
-    text-align: center;
+    text-align: right;
     max-width: 100%;
     letter-spacing: 0.25rem;
 }
 
-@keyframes shimmer {
+.index-page-header h1 span.h1-part3 {
+    font-family: var(--montez);
+    font-size: clamp(4rem, 6vw, 6rem);
+    color: var(--pink-mid4);
+    animation: text-shimmer 4s infinite;
+}
+
+@keyframes text-shimmer {
     0% {
-        background-position: top left;
+        color: var(--bright-pink);
     }
+
+    50% {
+        color: var(--pink-darker2);
+    }
+
     100% {
-        background-position: top right;
+        color: var(--bright-pink);
     }
 }
 
 .index-page-header h2 {
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 1rem;
     display: block;
     width: 100%;
-    text-align: center;
+    text-align: right;
     font-family: var(--libre-frank);
     letter-spacing: 0.5rem;
     color: var(--black-ish);
@@ -48,10 +51,24 @@
     font-size: clamp(1.25rem, 2vw, 2rem);
     line-height: 2rem;
     max-width: 100%;
+    background-color: var(--transparent-white);
+    border-radius: 0.5rem;
 }
 
 .above-fold-wrapper {
     height: min(55rem, 100vh);
+}
+
+.index-top-wrapper {
+    background-color: var(--transparent-white);
+    background-image: url(../images/index-above-fold2.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 /*
