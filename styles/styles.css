@@ -765,11 +765,10 @@ video {
 
 .above-fold-wrapper {
   background-color: var(--transparent-white);
-  background-image: url(../images/clouds.jpg);
+  background-image: url(../images/index-above-fold2.jpg);
   background-size: cover;
-  background-attachment: fixed;
   background-blend-mode: soft-light;
-  background-position: center;
+  background-position: 50% 30%;
   background-repeat: no-repeat;
 }
 
