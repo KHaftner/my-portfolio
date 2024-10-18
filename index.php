@@ -26,7 +26,6 @@ error_reporting(E_ALL);
                         </header>
                     </div>
 
-                    <section class="above-fold-content">
                 </div>
 
                 <div class="down-button">
@@ -39,7 +38,6 @@ error_reporting(E_ALL);
                         </svg>
                     </a>
                 </div>
-                </section>
         </div>
 
         <section class="below-fold-content" id="below-fold-content">

@@ -55,10 +55,6 @@
     border-radius: 0.5rem;
 }
 
-.above-fold-wrapper {
-    height: min(55rem, 100vh);
-}
-
 .index-top-wrapper {
     background-color: var(--transparent-white);
     background-image: url(../images/index-above-fold2.jpg);
@@ -68,6 +64,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    border: 0.5rem solid var(--transparent-white);
+    height: 100dvh;
 }
 
 /*
@@ -165,7 +163,7 @@
     }
 
     .arrows {
-        top: -6rem;
+        top: 1rem;
     }
 
     .above-fold-content .flower-img svg {
