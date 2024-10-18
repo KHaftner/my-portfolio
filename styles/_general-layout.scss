@@ -4,7 +4,7 @@ body {
     font-family: var(--paragraph-text);
     color: var(--pink-darker6);
     font-size: 1rem;
-    background-color: var(--brand-pink);
+    background-color: var(--white);
 }
 
 /*-----------------------------------------------------------
@@ -65,7 +65,7 @@ a:active {
 }
 
 .site-wrapper {
-    background-color: var(--pink-lighter5);
+    background-color: var(--white);
     max-width: 120rem;
     margin: 0 auto;
 }
