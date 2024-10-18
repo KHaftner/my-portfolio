@@ -38,8 +38,8 @@
   --pink-main2: #ffe6eb;
   --pink-main3: #ffcef2;
   --pink-main4: #ffc4d5;
-  --pink-dark: #fe4f70;
-  --pink-dark2: #ca415c;
+  --pink-dark: #d32c85;
+  --pink-dark2: #cd2f86;
   --pink-dark3: #973145;
   --pink-dark4: #65202e;
   --pink-dark5: #d06a88;
@@ -74,19 +74,9 @@
 
 /* */ /* */ /* */ /* */ /* Font Family Variables */ /* */ /* */ /* */ /* */
 :root {
-  --large-heading-text: "Playfair Display", serif;
-  --heading-text: "Merriweather", serif;
-  --paragraph-text: "Manrope", sans-serif;
-  --italiana: "Italiana", serif;
-  --sedan: "Sedan", serif;
-  --libre-bask: "Libre Baskerville", serif;
-  --libre-frank: "Libre Franklin", sans-serif;
-  --playfair: "Playfair", serif;
-  --thasadith: "Thasadith", sans-serif;
-  --alice: "Alice", serif;
-  --rouge: "Rouge Script", serif;
-  --monte-carlo: "MonteCarlo", serif;
-  --montez: "Montez", serif;
+  --large-heading-text: "Montez", serif;
+  --heading-text: "Italiana", serif;
+  --paragraph-text: "Libre Franklin", sans-serif;
 }
 
 /* */ /* */ /* */ /* */ /* Shadow Variables */ /* */ /* */ /* */ /* */
@@ -174,7 +164,6 @@ a:active {
   background-color: var(--pink-lighter5);
   max-width: 120rem;
   margin: 0 auto;
-  border: 1px solid var(--purple-darker2);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -551,53 +540,92 @@ video {
 
 /* */ /* */ /* */ /* */ /* Site Header */ /* */ /* */ /* */ /* */
 .site-header {
-  background-color: transparent;
   transition: all ease 0.5s;
   padding: 0;
-  width: 100%;
+  width: 12rem;
   position: fixed;
   z-index: 9999;
-  text-align: center;
   margin: 0 auto;
   top: 0;
+  height: 100vh;
+  background-color: var(--transparent-white);
+}
+
+.site-logo-div {
+  margin: 0 1.25rem;
+}
+
+.site-logo-div img.site-logo {
+  width: 10rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 2rem;
   left: 0;
-  right: 0;
+  opacity: 0.35;
+  z-index: -1;
+}
+
+.site-logo-div p {
+  position: relative;
+  top: -4.5rem;
+}
+
+.site-logo-div p:first-of-type {
+  margin: 0.5rem auto 0;
+  text-align: center;
+  padding: 0.25rem 0 0;
+  font-family: var(--heading-text);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.site-logo-div span.k-logo {
+  color: var(--pink-dark2);
+}
+
+.site-logo-div p.small-web-dev {
+  font-family: var(--paragraph-text);
+  margin: -0.5rem auto 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 0.65rem;
+  text-align: center;
+  letter-spacing: 0.25rem;
 }
 
 .site-header.scrolled {
-  background-image: linear-gradient(200deg, var(--brand-pink), var(--pink-lighter4));
-  box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.7882352941), -1px -1px 2px rgba(128, 128, 128, 0.8509803922);
+  background-color: var(--white);
 }
 
 .main-navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   letter-spacing: 0.15rem;
-  padding: 0 0.5rem;
-  font-family: var(--libre-frank);
-  font-size: clamp(0.9rem, 2vw, 1.15rem);
-  font-weight: 400;
+  padding: 0;
+  color: black;
+  font-family: var(--paragraph-text);
+  font-size: clamp(1rem, 1.25vw, 1.25rem);
+  font-weight: 300;
 }
 
 .main-navigation ul {
-  background-color: var(--transparent-white);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   padding: 0.75rem;
-  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+  margin: 6rem 0 0;
+  height: 100vh;
 }
 
 .main-navigation li {
   list-style: none;
   display: inline-block;
-}
-
-.main-navigation li:not(:last-child)::after {
-  content: " | ";
-  padding: 0 0.25rem;
-  color: var(--pink-dark2);
-  font-weight: 600;
+  margin: 0;
+  padding: 1.25rem 2rem;
+  text-align: right;
+  letter-spacing: 0.25rem;
 }
 
 .main-navigation a {
@@ -608,38 +636,14 @@ video {
   background-repeat: no-repeat;
   background-position: center bottom;
   transition: all 0.4s ease-out;
+  padding-bottom: 0.25rem;
 }
 
 .main-navigation a:hover {
-  background-size: calc(100% - 2em) 5px, auto;
+  background-size: calc(100% - 2rem) 2px, auto;
   background-size: 100% 2px, auto;
 }
 
-.logo svg {
-  position: relative;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: inline-block;
-  margin: 0 -0.5rem;
-}
-
-@media (min-width: 40em) {
-  .site-header {
-    height: 6.5rem;
-  }
-  .main-navigation ul {
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-  }
-  .main-navigation li:not(:last-child)::after {
-    padding: 1.25rem;
-  }
-  .logo svg {
-    width: 2rem;
-    height: 2rem;
-    margin: 0 -0.85rem;
-  }
-}
 /* */ /* */ /* */ /* */ /* Before Footer - Back to the Top */ /* */ /* */ /* */ /* */
 .back-top-wrapper {
   display: block;
@@ -770,7 +774,7 @@ video {
 
 .index-page-header h1 {
   scroll-margin-top: 5rem;
-  font-family: var(--italiana);
+  font-family: var(--heading-text);
   color: var(--black-ish);
   font-size: clamp(2rem, 4vw, 4rem);
   margin: 0 4rem;
@@ -782,7 +786,7 @@ video {
 }
 
 .index-page-header h1 span.h1-part3 {
-  font-family: var(--montez);
+  font-family: var(--large-heading-text);
   font-size: clamp(4rem, 6vw, 6rem);
   color: var(--pink-mid4);
   animation: text-shimmer 4s infinite;
@@ -805,7 +809,7 @@ video {
   display: block;
   width: 100%;
   text-align: right;
-  font-family: var(--libre-frank);
+  font-family: var(--paragraph-text);
   letter-spacing: 0.5rem;
   color: var(--black-ish);
   font-weight: 300;
@@ -825,7 +829,6 @@ video {
   background-image: url(../images/index-above-fold2.jpg);
   background-size: cover;
   background-blend-mode: soft-light;
-  background-position: 50% 30%;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
@@ -848,14 +851,13 @@ video {
 .arrows {
   width: 6.25rem;
   height: 6.25rem;
-  margin-left: -1.875rem;
   position: relative;
   left: 50%;
   transition: all ease 0.3s;
 }
 
 .arrows path {
-  stroke: var(--pink-dark2);
+  stroke: var(--bright-pink);
   fill: transparent;
   stroke-width: 0.25rem;
   animation: arrow 3s infinite;
@@ -973,13 +975,14 @@ video {
 }
 
 .below-fold-content h2 {
-  font-family: var(--large-heading-text);
-  color: var(--purple-darker2);
-  font-size: clamp(5rem, 10vw, 10rem);
+  font-family: var(--heading-text);
+  color: var(--pink-mid4);
+  font-size: clamp(4rem, 8vw, 8rem);
   margin: 1rem auto 5.5rem;
-  text-shadow: var(--text-shadow);
+  text-shadow: var(--text-shadow3);
   text-align: center;
   padding: 1rem;
+  letter-spacing: 0.5rem;
 }
 
 .below-fold-content .p-container {
@@ -1155,7 +1158,7 @@ video {
 }
 
 .skills-list h2 {
-  font-family: var(--large-heading-text);
+  font-family: var(--heading-text);
   color: var(--purple-darker2);
   font-size: clamp(6rem, 8vw, 8rem);
   margin: 0 auto;
@@ -1291,7 +1294,7 @@ video {
 }
 
 .bottom-content-top h2 {
-  font-family: var(--large-heading-text);
+  font-family: var(--heading-text);
   color: var(--purple-darker2);
   font-size: clamp(4rem, 6vw, 6rem);
   margin: 0 auto;

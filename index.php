@@ -11,10 +11,10 @@ error_reporting(E_ALL);
     <a href="#index-site-main" class="screen-reader-text">Skip to Content</a>
 
     <div class="site-wrapper">
-        <div class="index-top-wrapper">
         <?php
         require "site-header.php";
         ?>
+        <div class="index-top-wrapper">
             <main id="index-site-main">
                 <div class="above-fold-wrapper">
                     <div class="page-header-wrapper">

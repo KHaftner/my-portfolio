@@ -37,8 +37,8 @@
     --pink-main2: #ffe6eb;
     --pink-main3: #ffcef2;
     --pink-main4: #ffc4d5;
-    --pink-dark: #fe4f70;
-    --pink-dark2: #ca415c;
+    --pink-dark: #d32c85;
+    --pink-dark2: #cd2f86;
     --pink-dark3: #973145;
     --pink-dark4: #65202e;
     --pink-dark5: #d06a88;
@@ -74,19 +74,9 @@
 
 /* */ /* */ /* */ /* */ /* Font Family Variables */ /* */ /* */ /* */ /* */
 :root {
-    --large-heading-text: "Playfair Display", serif;
-    --heading-text: "Merriweather", serif;
-    --paragraph-text: "Manrope", sans-serif;
-    --italiana: "Italiana", serif;
-    --sedan: "Sedan", serif;
-    --libre-bask: "Libre Baskerville", serif;
-    --libre-frank: "Libre Franklin", sans-serif;
-    --playfair: "Playfair", serif;
-    --thasadith: "Thasadith", sans-serif;
-    --alice: "Alice", serif;
-    --rouge: "Rouge Script", serif;
-    --monte-carlo: "MonteCarlo", serif;
-    --montez: "Montez", serif;
+    --large-heading-text: "Montez", serif;
+    --heading-text: "Italiana", serif;
+    --paragraph-text: "Libre Franklin", sans-serif;
 }
 
 /* */ /* */ /* */ /* */ /* Shadow Variables */ /* */ /* */ /* */ /* */

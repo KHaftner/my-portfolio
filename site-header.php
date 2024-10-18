@@ -1,10 +1,14 @@
 <header class="site-header">
                 <nav class="main-navigation">
-                    <div class="logo">
-                    <?php
-                    echo get_svg('header-logo');
-                    ?>
+                <a href="index.php">
+                    <div class="site-logo-div">
+                        <div class="logo-pic">
+                            <img src="images/cherry-blossom.svg" alt="Site Logo - A Cherry Blossom Icon" class="site-logo">
+                        </div>
+                        <p><span class="k-logo">K.</span> Haftner</p>
+                        <p class="small-web-dev">Web Development</p>
                     </div>
+                </a>
                     <ul class="site-navigation" id="site-navigation">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About</a></li>
@@ -12,11 +16,5 @@
                         <li><a href="blog.php">Blog</a></li>
                         <li><a href="contact.php">Contact</a></li>
                     </ul>
-
-                    <div class="logo">
-                    <?php
-                    echo get_svg('header-logo');
-                    ?>
-                    </div>
                 </nav>
             </header>
