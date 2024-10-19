@@ -31,15 +31,15 @@
 .site-logo-div p {
     position: relative;
     top: -4.5rem;
+    font-family: var(--heading-text);
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .site-logo-div p:first-of-type {
     margin: 0.5rem auto 0;
     text-align: center;
     padding: 0.25rem 0 0;
-    font-family: var(--heading-text);
-    font-size: 2rem;
-    font-weight: bold;
 }
 
 .site-logo-div span.k-logo {

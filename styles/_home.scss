@@ -8,6 +8,7 @@
     scroll-margin-top: 5rem;
     font-family: var(--heading-text);
     color: var(--black-ish);
+    font-weight: bold;
     font-size: clamp(2rem, 4vw, 4rem);
     margin: 0 4rem;
     padding-top: 12rem;
@@ -165,19 +166,11 @@
     .arrows {
         top: 1rem;
     }
-
-    .above-fold-content .flower-img svg {
-        margin-top: -24rem;
-    }
 }
 
 @media (min-width: 100em) {
     .index-page-header h1 {
         padding-top: 20rem;
-    }
-
-    .above-fold-content .flower-img svg {
-        margin-top: -28rem;
     }
 }
 
@@ -186,8 +179,8 @@
 .below-fold-content {
     height: 100dvh;
     border: 1rem solid var(--white);
-    background-color: var(--transparent-purple);
-    background-image: url(../images/below-fold.jpg);
+    background-color: var(--transparent-pink);
+    background-image: url(../images/welcome.jpg);
     background-size: cover;
     background-blend-mode: soft-light;
     background-repeat: no-repeat;
@@ -199,28 +192,28 @@
 
 .below-fold-content h2 {
     font-family: var(--heading-text);
-    color: var(--light-pink);
+    color: var(--bright-pink);
     font-size: clamp(4rem, 8vw, 8rem);
-    margin: 2rem 1rem 0;
+    margin: 2rem 3rem 0 0;
     text-shadow: var(--text-shadow3);
     text-align: right;
-    padding: 1rem;
     letter-spacing: 0.5rem;
 }
 
 .below-fold-content .p-container {
     background-color: var(--transparent-pink);
-    max-width: 40rem;
+    max-width: 35rem;
     font-weight: 700;
-    margin: -1rem 2rem 2rem;
+    margin: 1rem 2rem 2rem;
     border-radius: 0.25rem;
     box-shadow: -1rem -1rem 0px 0px var(--transparent-white);
+    border: 1px solid var(--transparent-white-2);
 }
 
 .below-fold-content p {
-    padding: 4rem;
+    padding: 2.5rem 2rem;
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 2.5rem;
 }
 
@@ -248,40 +241,12 @@
     scroll-margin-top: 5rem;
     border: 1rem solid var(--white);
     background-color: var(--transparent-pink);
-    background-image: url(../images/skills-section.jpeg);
+    background-image: url(../images/cute-background.jpg);
     background-size: cover;
     background-blend-mode: soft-light;
     margin: 0 auto;
     max-width: 120rem;
     height: 100dvh;
-}
-
-.filter-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: transparent;
-    padding: 1rem;
-    margin-top: 10rem;
-    margin-bottom: -1rem;
-}
-
-.filter-buttons button {
-    font-weight: 600;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.5rem;
-    background-color: var(--purple-darker4);
-    color: var(--white);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-}
-
-.filter-buttons button:hover,
-.filter-buttons .active {
-    background-color: var(--pink-lighter2);
-    color: var(--purple-darker4);
 }
 
 .skills-list h2 {
@@ -292,7 +257,6 @@
     text-shadow: var(--text-shadow3);
     text-align: center;
     padding: 1rem;
-    background-color: var(--transparent-white);
     letter-spacing: 0.25rem;
 }
 
@@ -307,9 +271,6 @@
     justify-content: center;
     align-content: center;
     padding: 2rem 6rem;
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FDC8DB'/%3E%3Cstop offset='1' stop-color='%23FDC8DB'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='15' height='15' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='7.5' cy='7.5' r='7.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.2'/%3E%3C/svg%3E");
-    border: 2px dashed var(--white);
     min-height: 18rem;
     margin-bottom: 0;
 }
@@ -324,7 +285,8 @@
     background-color: var(--pink-lighter5);
     border-radius: 1rem;
     padding: 0.25rem;
-    box-shadow: 4px 4px 0px 0px var(--pink-darker), 5px 5px 4px 0px #987eb2;
+    box-shadow: 4px 4px 0px 0px var(--pink-darker),
+        5px 5px 4px 0px var(--pink-dark);
     max-height: 4rem;
 }
 
@@ -344,16 +306,6 @@
     height: auto;
 }
 
-.skills-bottom-svg {
-    background-color: var(--brand-pink);
-    border-top: 5px solid var(--brand-pink);
-    border-bottom: 5px solid var(--brand-pink);
-}
-
-.skills-bottom-svg svg {
-    display: none;
-}
-
 @media (min-width: 40em) {
     .skills-list svg:first-of-type {
         max-width: 20rem;
@@ -366,17 +318,6 @@
 }
 
 @media (min-width: 100em) {
-    .skills-bottom-svg svg.the-down-button {
-        fill: var(--purple-darker2);
-        width: 10rem;
-        height: 10rem;
-        margin: -10rem auto 0;
-        text-align: center;
-        display: block;
-        transition: all 0.4s ease;
-        animation: bounce 2s infinite;
-    }
-
     @keyframes bounce {
         0%,
         20%,
@@ -392,23 +333,23 @@
             transform: translateY(-15px);
         }
     }
-
-    .skills-bottom-svg svg.the-down-button:hover {
-        fill: var(--purple-darker);
-        animation: none;
-    }
 }
 
 /* */ /* */ /* */ /* */ /* Index Page - Bottom Explore Part */ /* */ /* */ /* */ /* */
 
 .bottom-content {
     scroll-margin-top: 6rem;
-    background-color: #fee9f1;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='129.7' height='389' viewBox='0 0 50 150'%3E%3Cg stroke='%23987EB2' stroke-width='4.5' %3E%3Cpolygon fill='%23FDC8DB' points='80 -30 -30 -30 -30 50 25 100 80 50'/%3E%3C/g%3E%3C/svg%3E");
-    background-repeat: repeat-x;
-    background-position: top center;
     max-width: 120rem;
     margin: 0 auto;
+    scroll-margin-top: 5rem;
+    border: 1rem solid var(--white);
+    background-color: var(--transparent-pink);
+    background-image: url(../images/bottom-image.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-position: 100% 50%;
+    max-width: 120rem;
+    height: 100dvh;
 }
 
 .bottom-content-wrapper {
@@ -437,10 +378,10 @@
 
 .bottom-content-top h2 {
     font-family: var(--heading-text);
-    color: var(--purple-darker2);
+    color: var(--bright-pink);
     font-size: clamp(4rem, 6vw, 6rem);
     margin: 0 auto;
-    text-shadow: var(--text-shadow);
+    text-shadow: var(--text-shadow3);
     text-align: center;
     padding: 1rem;
 }
@@ -574,11 +515,6 @@
 }
 
 @media (min-width: 80em) {
-    .bottom-content h2 {
-        text-shadow: var(--text-shadow);
-        padding: 3rem;
-    }
-
     .bottom-content article {
         margin-top: 2rem;
     }
