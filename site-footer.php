@@ -31,7 +31,7 @@
             </nav>
 
             <p>
-                ©<span id="current-year"></span> -
+                © <span id="current-year"></span> -
                 Kassandra Haftner
             </p>
         </footer>

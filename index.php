@@ -113,9 +113,8 @@ error_reporting(E_ALL);
                         </div>
                     </article>
                 </div>
-                <?php
-                require "back-to-top.php";
-                ?>
+
+        
             </div>
 
         </section>
