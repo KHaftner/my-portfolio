@@ -74,20 +74,7 @@ error_reporting(E_ALL);
             <div class="bottom-content-wrapper">
 
                 <div class="main-card">
-                    <article data-aos="flip-left" data-aos-delay="200">
-                        <div class="overlay-card">
-                            <a href="projects.php">
-                                <div class="overlay">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-text-content">
-                                <p>My Projects.</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="main-card">
-                    <article  data-aos="flip-left" data-aos-delay="300">
+                    <article  data-aos="flip-left" data-aos-delay="100">
                         <div class="overlay-card">
                             <a href="about.php">
                                 <div class="overlay">
@@ -95,13 +82,41 @@ error_reporting(E_ALL);
                             </a>
                         </div>
                         <div class="card-text-content">
-                                <p>About Me.</p>
+                                <h3>About Me</h3>
                         </div>
                     </article>
                 </div>
 
                 <div class="main-card">
-                    <article  data-aos="flip-left" data-aos-delay="400">
+                    <article data-aos="flip-left" data-aos-delay="100">
+                        <div class="overlay-card">
+                            <a href="projects.php">
+                                <div class="overlay">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-text-content">
+                                <h3>My Projects</h3>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="main-card">
+                    <article  data-aos="flip-left" data-aos-delay="100">
+                        <div class="overlay-card">
+                            <a href="blog.php">
+                                <div class="overlay">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-text-content">
+                                <h3>My Blog</h3>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="main-card">
+                    <article  data-aos="flip-left" data-aos-delay="105">
                         <div class="overlay-card">
                             <a href="contact.php">
                                 <div class="overlay">
@@ -109,7 +124,7 @@ error_reporting(E_ALL);
                             </a>
                         </div>
                         <div class="card-text-content">
-                                <p>Contact Me.</p>
+                                <h3>Contact Me</h3>
                         </div>
                     </article>
                 </div>
