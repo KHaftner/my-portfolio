@@ -3,19 +3,73 @@
 /* */ /* */ /* */ /* */ /* Site Footer */ /* */ /* */ /* */ /* */
 
 .site-footer {
-    background-color: var(--white);
+    background-color: var(--transparent-white);
     font-size: 0.85rem;
-    font-weight: 400;
     font-family: var(--alternate-text);
-    padding: 1rem;
+    padding: 0;
     width: 100%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
     max-width: 120rem;
 }
 
 .site-footer p {
     line-height: 1rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    margin: 0;
+    font-family: var(--paragraph-text);
+}
+
+@keyframes bounce-up {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.5rem;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.site-footer .back-to-top a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 8rem;
+    height: 5rem;
+    margin: 1rem auto 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--black-ish);
+    border: 1px solid var(--transparent-black);
+    font-size: 0.75rem;
+}
+
+.site-footer .back-to-top a p {
+    font-family: var(--alternate-text2);
+    font-weight: 400;
+}
+
+.site-footer .back-to-top a:hover {
+    color: var(--pink-mid4);
+    border: 1px solid var(--bright-pink);
+    transition: all 0.4s ease;
+}
+
+.site-footer .back-to-top a:hover svg {
+    fill: var(--pink-mid4);
+}
+
+.site-footer .back-to-top svg {
+    fill: var(--black-ish);
+    animation: bounce-up 3s infinite;
+    position: relative;
+    transition: 0.4s ease;
 }
 
 .footer-icons ul {

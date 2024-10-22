@@ -1,7 +1,6 @@
 /* */ /* */ /* */ /* */ /* Index Page - Above Fold */ /* */ /* */ /* */ /* */
-
-#index-site-main {
-    margin-top: -6rem;
+.main-content-and-footer {
+    width: min(100vw, 120rem);
 }
 
 .index-page-header h1 {
@@ -41,7 +40,7 @@
 
 .index-page-header h2 {
     margin: 1rem auto;
-    padding: 1rem;
+    padding: 2rem;
     display: block;
     width: 100%;
     text-align: right;
@@ -65,7 +64,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    border: 1rem solid var(--white);
+    border-top: 1rem solid var(--white);
+    border-right: 1rem solid var(--white);
+    border-bottom: 1rem solid var(--white);
     height: 100dvh;
 }
 
@@ -144,41 +145,13 @@
     -webkit-animation-delay: 0s;
 }
 
-@media (min-width: 35em) {
-    .index-page-header h1 {
-        padding-top: 15rem;
-    }
-}
-
-@media (min-width: 80em) {
-    #index-site-main {
-        margin-top: -8rem;
-    }
-
-    .index-page-header h1 {
-        margin-bottom: -1rem;
-        margin-top: 8rem;
-    }
-    .index-page-header h2 {
-        padding: 2rem;
-    }
-
-    .arrows {
-        top: 1rem;
-    }
-}
-
-@media (min-width: 100em) {
-    .index-page-header h1 {
-        padding-top: 20rem;
-    }
-}
-
 /* */ /* */ /* */ /* */ /* Index Page - Below Fold */ /* */ /* */ /* */ /* */
 
 .below-fold-content {
     height: 100dvh;
-    border: 1rem solid var(--white);
+    border-top: 1rem solid var(--white);
+    border-right: 1rem solid var(--white);
+    border-bottom: 1rem solid var(--white);
     background-color: var(--transparent-pink);
     background-image: url(../images/welcome.jpg);
     background-size: cover;
@@ -238,7 +211,6 @@
 /* */ /* */ /* */ /* */ /* Index Page - Skills List & Sort */ /* */ /* */ /* */ /* */
 
 .skills-list {
-    scroll-margin-top: 5rem;
     border: 1rem solid var(--white);
     background-color: var(--transparent-pink);
     background-image: url(../images/cute-background.jpg);
@@ -337,38 +309,37 @@
 
 /* */ /* */ /* */ /* */ /* Index Page - Bottom Explore Part */ /* */ /* */ /* */ /* */
 
-.bottom-content {
-    scroll-margin-top: 6rem;
+.bottom-and-footer {
+    height: 100dvh;
     max-width: 120rem;
     margin: 0 auto;
-    scroll-margin-top: 5rem;
-    border: 1rem solid var(--white);
+    border-top: 1rem solid var(--white);
+    border-right: 1rem solid var(--white);
+    border-bottom: 1rem solid var(--white);
     background-color: var(--transparent-pink);
     background-image: url(../images/bottom-image.jpg);
     background-size: cover;
     background-blend-mode: soft-light;
     background-position: 100% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .bottom-content-wrapper {
-    margin-top: 5rem;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
-    padding-left: 10rem;
 }
 
 .bottom-content article {
-    background-color: var(--transparent-white);
-    background-image: url(../images/about-me.jpg);
-    background-blend-mode: soft-light;
-    background-size: cover;
     max-width: 80%;
     border-radius: 0.25rem;
-    margin: 1rem auto;
+    margin: 2rem auto 1rem;
     padding: 0.75rem;
+    filter: grayscale(1);
     border-top: 1rem solid var(--white);
     border-left: 1rem solid var(--white);
     border-right: 1rem solid var(--white);
@@ -376,46 +347,56 @@
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
-.bottom-content article:nth-of-type(2) {
-    background-color: var(--transparent-white);
-    background-image: url(../images/my-projects.jpg);
-    background-blend-mode: soft-light;
+.bottom-content article.about-card {
+    background-image: url(../images/about-me.jpg);
     background-size: cover;
+    background-position: center;
 }
-.bottom-content-top {
-    height: 12rem;
-    display: flex;
-    align-items: center;
+
+.bottom-content article.projects-card {
+    background-image: url(../images/my-projects.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom-content article.blog-card {
+    background-image: url(../images/my-blog.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom-content article.contact-card {
+    background-image: url(../images/contactme.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .bottom-content-top h2 {
     font-family: var(--heading-text);
     color: var(--bright-pink);
-    font-size: clamp(6rem, 8vw, 8rem);
+    font-size: clamp(4rem, 6vw, 6rem);
     letter-spacing: 0.25rem;
-    margin: 0 auto;
+    margin: 1rem auto;
     text-shadow: var(--text-shadow3);
     text-align: center;
-    padding: 6rem 0 0 8rem;
 }
 
 .card-text-content {
     position: relative;
-    top: 11.5rem;
+    top: 9.5rem;
 }
 
 .bottom-content h3 {
     color: var(--black-ish);
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem 1rem;
     width: 100%;
     font-family: "Square Peg";
-    letter-spacing: 0.15rem;
     display: flex;
     justify-content: center;
     margin: 2rem auto 1rem;
     transition: all 0.4s ease-out;
     font-weight: normal;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
 }
 
 .bottom-content p {
@@ -434,18 +415,18 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    transition: all 0.5s ease-out;
+    transition: all 0.6s ease-out;
 }
 
 .bottom-content-wrapper .main-card article:hover {
-    transform: translateY(-1rem);
-    transition: all 0.5s ease;
-    border-top: 1rem solid var(--pink-lighter);
-    border-left: 1rem solid var(--pink-lighter);
-    border-right: 1rem solid var(--pink-lighter);
-    border-bottom: 5rem solid var(--pink-lighter);
-    box-shadow: 3px 3px 0px 0px var(--bright-pink);
-    background-blend-mode: normal;
+    transform: translateY(-1rem) rotate(-5deg);
+    transition: all 0.6s ease;
+    box-shadow: 5px 5px 0px 0px var(--transparent-pink-2);
+    filter: grayscale(0);
+
+    h3 {
+        color: var(--pink-mid4);
+    }
 }
 
 .overlay-card {
@@ -500,7 +481,7 @@
 
 @media (min-width: 68.75em) {
     .main-card {
-        max-width: 33%;
+        max-width: 25%;
     }
 }
 
@@ -514,16 +495,10 @@
     }
 
     .bottom-content article {
-        width: 20rem;
-        height: 20rem;
+        width: 22rem;
+        height: 18rem;
     }
     .bottom-content p {
         font-size: 0.95rem;
-    }
-}
-
-@media (min-width: 90em) {
-    .bottom-content {
-        height: 100dvh;
     }
 }
