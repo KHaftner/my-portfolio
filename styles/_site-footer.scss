@@ -3,7 +3,7 @@
 /* */ /* */ /* */ /* */ /* Site Footer */ /* */ /* */ /* */ /* */
 
 .site-footer {
-    background-color: var(--transparent-white);
+    background-color: transparent;
     font-size: 0.85rem;
     font-family: var(--alternate-text);
     padding: 0;
@@ -19,6 +19,7 @@
     padding: 0.5rem;
     margin: 0;
     font-family: var(--paragraph-text);
+    letter-spacing: 0.2rem;
 }
 
 @keyframes bounce-up {
@@ -46,13 +47,14 @@
     border-radius: 0.5rem;
     text-decoration: none;
     color: var(--black-ish);
-    border: 1px solid var(--transparent-black);
+    border: 1px solid transparent;
     font-size: 0.75rem;
 }
 
 .site-footer .back-to-top a p {
     font-family: var(--alternate-text2);
     font-weight: 400;
+    letter-spacing: 0;
 }
 
 .site-footer .back-to-top a:hover {
@@ -95,8 +97,8 @@
 
 .footer-icons svg {
     overflow: visible;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
     margin: 0 auto;
 }
 
