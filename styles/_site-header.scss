@@ -8,12 +8,19 @@
     z-index: 9999;
     margin: 0 auto;
     top: 0;
-    height: 100vh;
     background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
 }
 
 .site-logo-div {
     margin: 0 1.25rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .site-logo-div img.site-logo {
@@ -56,63 +63,37 @@
     letter-spacing: 0.25rem;
 }
 
-/* nav {
-    float: none;
-    clear: both;
-    width: 30%;
-    margin: 10% auto;
-    background: #eee;
-} */
-
-/*
-nav li {
-    float: none;
-    width: 100%;
-}
-    */
-/*
-nav li a {
-    display: block;
-    width: 100%;
-    padding: 20px;
-    border-left: 5px solid;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    color: #444;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-    */
-
 .main-navigation {
     letter-spacing: 0.15rem;
-    padding: 0;
+    padding: 0 0 2rem;
     color: black;
     font-family: var(--paragraph-text);
     font-size: clamp(1rem, 1.15vw, 1.15rem);
     font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .main-navigation ul {
-    padding: 0 1rem;
+    padding: 0 1rem 0 0;
     display: flex;
     flex-direction: column;
     width: 12rem;
-    margin: 5rem 0 2rem;
-    height: 100vh;
+    height: auto;
     position: relative;
 }
 
 .main-navigation ul li {
     list-style: none;
     display: block;
-    margin: 0;
+    margin: 1rem 0 0;
     padding: 0;
     text-align: right;
     letter-spacing: 0.25rem;
     width: 100%;
+    font-weight: 400;
 }
 
 .main-navigation a {
@@ -126,8 +107,53 @@ nav li a {
     width: 100%;
     position: relative;
     z-index: 2;
+    transition: all 0.4s ease;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        border-radius: 2rem;
+        background: var(--transparent-pink-3);
+        width: 3rem;
+        height: 3rem;
+        transition: all 0.6s ease;
+        z-index: -1;
+    }
+
+    svg {
+        position: relative;
+        top: 0;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: var(--white);
+        stroke-width: 2;
+        transform: translateX(0);
+        transition: all 0.6s ease;
+    }
+
+    &:hover {
+        color: var(--white);
+        letter-spacing: 0.35rem;
+        &:before {
+            width: 100%;
+            background: var(--transparent-pink-4);
+            border-radius: 0 2rem 2rem 0;
+        }
+        svg {
+            transform: translateX(-1rem);
+        }
+    }
+
+    &:active {
+        transform: scale(0.96);
+    }
 }
 
+/*
 .main-navigation li a:hover {
     border-bottom: 0;
     color: var(--white);
@@ -180,3 +206,4 @@ nav li a {
 .main-navigation li:last-child a:before {
     background: var(--pink-dark2);
 }
+*/
