@@ -8,6 +8,7 @@
                 <p>Back to the top?</p>
             </a>
     </div>
+    <div class="bottom-footer-container">
             <nav class="footer-icons">
                 <ul>
                     <li>
@@ -43,4 +44,5 @@
                 © <span id="current-year"></span> 
                 Kassandra Haftner
             </p>
+            </div>
         </footer>

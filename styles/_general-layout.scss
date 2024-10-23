@@ -11,8 +11,6 @@ body {
     SCROLLBAR STYLES
 -----------------------------------------------------------*/
 
-/* https://developer.chrome.com/docs/css-ui/scrollbar-styling */
-/* Legacy Browsers */
 *::-webkit-scrollbar-thumb {
     background: var(--bright-pink);
 }
@@ -26,7 +24,6 @@ body {
     max-height: 16px;
 }
 
-/* Modern Browsers that have scrollbar styling support. */
 * {
     scrollbar-width: auto;
     scrollbar-color: var(--bright-pink) var(--light-pink);
