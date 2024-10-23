@@ -214,3 +214,100 @@ details > p {
         font-weight: 500;
     }
 }
+
+.skills-list {
+    border: 1rem solid var(--white);
+    background-color: var(--transparent-pink);
+    background-image: url(../images/cute-background.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    margin: 0 auto;
+    max-width: 120rem;
+    height: 100dvh;
+}
+
+.skills-list h2 {
+    font-family: var(--heading-text);
+    color: var(--bright-pink);
+    font-size: clamp(6rem, 8vw, 8rem);
+    margin: 0 auto;
+    text-shadow: var(--text-shadow3);
+    text-align: center;
+    padding: 1rem;
+    letter-spacing: 0.25rem;
+}
+
+.skills-list ul {
+    display: grid;
+    --auto-grid-min-size: 10rem;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(var(--auto-grid-min-size), 1fr)
+    );
+    grid-gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem 6rem;
+    min-height: 18rem;
+    margin-bottom: 0;
+}
+
+.skills-list li {
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: var(--pink-lighter5);
+    border-radius: 1rem;
+    padding: 0.25rem;
+    box-shadow: 4px 4px 0px 0px var(--pink-darker),
+        5px 5px 4px 0px var(--pink-dark);
+    max-height: 4rem;
+}
+
+.skills-list svg {
+    height: 3rem;
+    width: 3rem;
+    padding: 0 1rem 0 0;
+}
+
+.skills-top-svg {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-top-svg svg {
+    width: 90%;
+    height: auto;
+}
+
+@media (min-width: 40em) {
+    .skills-list svg:first-of-type {
+        max-width: 20rem;
+    }
+
+    .skills-top-svg svg {
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+@media (min-width: 100em) {
+    @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+}

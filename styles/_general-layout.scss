@@ -1,12 +1,3 @@
-/* */ /* */ /* */ /* */ /* Main Layout */ /* */ /* */ /* */ /* */
-
-body {
-    font-family: var(--paragraph-text);
-    color: var(--pink-darker6);
-    font-size: 1rem;
-    background-color: var(--white);
-}
-
 /*-----------------------------------------------------------
     SCROLLBAR STYLES
 -----------------------------------------------------------*/
@@ -27,6 +18,17 @@ body {
 * {
     scrollbar-width: auto;
     scrollbar-color: var(--bright-pink) var(--light-pink);
+}
+
+/*-----------------------------------------------------------
+    MAIN LAYOUT
+-----------------------------------------------------------*/
+
+body {
+    font-family: var(--paragraph-text);
+    color: var(--pink-darker6);
+    font-size: 1rem;
+    background-color: var(--white);
 }
 
 h1,
