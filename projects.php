@@ -27,65 +27,62 @@ include "svgs.php";
                     </header>
                 </section>
                 <section class="showcased-projects">
-                    <a class="main-card" href="project-movies.php">
-                        <article>
-                            <figure>
-                                <img src="images/project02.png" alt="A polaroid image with a preview of the Movie Love website" class="polaroid-preview movies bottom">
-                                <figcaption>Movie Love</figcaption>
-                            </figure>
-                        </article>
-                    </a>
-                    <a class="main-card" href="project-abby.php">
-                        <article>
-                            <figure>
-                                <img src="images/project01.png" alt="A polaroid image with a preview of the Abby Wants to Play game" class="polaroid-preview abby bottom">
-                                <figcaption>Abby Wants to Play!</figcaption>
-                            </figure>
-                        </article>
-                    </a>
-                    <a class="main-card" href="project-amazilia.php">
-                        <article>
-                            <figure>
-                                <img src="images/project04.png" alt="A polaroid image for the Amazilia Acrescapers project" class="polaroid-preview amazilia bottom">
-                                <figcaption>Amazilia Acrescapers</figcaption>
-                            </figure>
-                        </article>
-                    </a>
-                    <a class="main-card" href="project-portfolio.php">
-                        <article>
-                            <figure>
-                                <img src="images/project03.png" alt="A polaroid image with a preview of the Movie Love website" class="polaroid-preview movies bottom">
-                                <figcaption>Porfolio Version #1</figcaption>
-                            </figure>
-                        </article>
-                    </a>
-                    <a class="main-card" href="project-lostonboard.php">
-                        <article>
-                            <figure>
-                                <img src="images/project05.png" alt="A polaroid image with a preview of the Abby Wants to Play game" class="polaroid-preview abby bottom">
-                                <figcaption>Lost on Board</figcaption>
-                            </figure>
-                        </article>
-                    </a>
-                    <a class="main-card" href="project-puppersonpatrol.php">
-                        <article>
-                            <figure>
-                                <img src="images/project06.png" alt="A polaroid image for the Amazilia Acrescapers project" class="polaroid-preview amazilia bottom">
-                                <figcaption>Puppers on Patrol</figcaption>
-                            </figure>
-                        </article>
-                    </a>
-                </section>
-
-                    <div class="bottom-git-wrapper">
-                        <h3>More Projects to Come! ✌</h3>
-                        <p>This portfolio was made with Vanilla HTML / CSS / JavaScript.</p>
-                        <a href="https://github.com/KHaftner/my-portfolio" target="_blank">View on GitHub</a>
+                    <div class="projects-container">
+                        <a class="main-card" href="project-movies.php">
+                            <article>
+                                <figure>
+                                    <img src="images/project02.png" alt="A polaroid image with a preview of the Movie Love website" class="polaroid-preview movies bottom">
+                                    <figcaption>Movie Love</figcaption>
+                                </figure>
+                            </article>
+                        </a>
+                        <a class="main-card" href="project-abby.php">
+                            <article>
+                                <figure>
+                                    <img src="images/project01.png" alt="A polaroid image with a preview of the Abby Wants to Play game" class="polaroid-preview abby bottom">
+                                    <figcaption>Abby Wants to Play!</figcaption>
+                                </figure>
+                            </article>
+                        </a>
+                        <a class="main-card" href="project-amazilia.php">
+                            <article>
+                                <figure>
+                                    <img src="images/project04.png" alt="A polaroid image for the Amazilia Acrescapers project" class="polaroid-preview amazilia bottom">
+                                    <figcaption>Amazilia Acrescapers</figcaption>
+                                </figure>
+                            </article>
+                        </a>
+                        <a class="main-card" href="project-portfolio.php">
+                            <article>
+                                <figure>
+                                    <img src="images/project03.png" alt="A polaroid image with a preview of the Movie Love website" class="polaroid-preview movies bottom">
+                                    <figcaption>Portfolio Version One</figcaption>
+                                </figure>
+                            </article>
+                        </a>
+                        <a class="main-card" href="project-lostonboard.php">
+                            <article>
+                                <figure>
+                                    <img src="images/project05.png" alt="A polaroid image with a preview of the Abby Wants to Play game" class="polaroid-preview abby bottom">
+                                    <figcaption>Lost on Board</figcaption>
+                                </figure>
+                            </article>
+                        </a>
+                        <a class="main-card" href="project-puppersonpatrol.php">
+                            <article>
+                                <figure>
+                                    <img src="images/project06.png" alt="A polaroid image for the Amazilia Acrescapers project" class="polaroid-preview amazilia bottom">
+                                    <figcaption>Puppers on Patrol</figcaption>
+                                </figure>
+                            </article>
+                        </a>
                     </div>
+
+                    <?php
+                    require "site-footer.php";
+                    ?>
+                </section>
             </main>
-            <?php
-            require "site-footer.php";
-            ?>
             </div>
     </div>
     <script src="scripts/scripts.js"></script>
