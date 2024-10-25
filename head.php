@@ -34,4 +34,5 @@
     <!-- CSS Style Sheets -->
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>

@@ -102,6 +102,7 @@ error_reporting(E_ALL);
         ?>
         <script src="scripts/scripts.js"></script>
         <script src="node_modules/aos/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
