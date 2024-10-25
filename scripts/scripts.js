@@ -18,6 +18,8 @@ window.addEventListener("scroll", () => {
 
 /* */ /* */
 
+/*
+
 const allBtn = document.getElementById("allBtn");
 const designBtn = document.getElementById("designBtn");
 const developmentBtn = document.getElementById("developmentBtn");
@@ -78,11 +80,13 @@ document.addEventListener("DOMContentLoaded", function () {
     showAllItems();
 });
 
+*/
+
 // Initialize AOS
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
     AOS.init();
-  });
+});
 
 /* Add this later, no time right now...
 
@@ -90,3 +94,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
 */
 
+const swiper = new Swiper(".swiper", {
+    loop: true,
+    speed: 600,
+
+    autoplay: {
+        delay: 3000,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+        },
+        560: {
+            slidesPerView: 3,
+        },
+        990: {
+            slidesPerView: 4,
+        },
+    },
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 40,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+    },
+});

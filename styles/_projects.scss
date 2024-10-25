@@ -2,21 +2,6 @@
     PROJECTS PAGE STYLES
 -----------------------------------------------------------*/
 
-.projects-top-content {
-    height: 100dvh;
-    border-top: 1rem solid var(--white);
-    border-right: 1rem solid var(--white);
-    border-bottom: 1rem solid var(--white);
-    background-color: var(--transparent-pink);
-    background-image: url(../images/projects-top.jpg);
-    background-size: cover;
-    background-blend-mode: soft-light;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .bottom-git-wrapper {
     max-width: 35rem;
     text-align: center;
@@ -104,25 +89,6 @@ a.bottom-projects {
     transition: all 0.3s ease-out;
 }
 
-figure {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    padding: 0 0 1rem;
-}
-
-figure img {
-    margin: 0 auto;
-    display: block;
-}
-
-figcaption {
-    text-align: center;
-    font-weight: 800;
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-}
-
 .thumbnail-size {
     max-width: min(10rem, 15vw);
 }
@@ -143,95 +109,89 @@ a.bottom-projects:active {
 }
 
 .showcased-projects {
-    position: relative;
     height: 100dvh;
     border-top: 1rem solid var(--white);
     border-right: 1rem solid var(--white);
     border-bottom: 1rem solid var(--white);
-    background-color: var(--transparent-pink);
-    background-image: url(../images/projects-preview.jpg);
+    background-color: var(--light-pink);
+    /* background image */
     background-size: cover;
     background-blend-mode: soft-light;
     background-repeat: no-repeat;
-    gap: 0;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
 
-    a.main-card {
-        width: 23.5rem;
-        transition: all ease 1.25s;
-        position: relative;
+    .swiper {
+        width: 80vw;
+        height: 70%;
 
-        &:first-of-type {
-            position: absolute;
-            top: 2%;
-            left: 3%;
-            transform: rotate(-5deg);
-            z-index: 2;
-        }
+        .swiper-slide {
+            article {
+                width: 80%;
+                height: 55%;
+                position: relative;
+                padding: 1.5rem;
 
-        &:nth-of-type(2) {
-            position: absolute;
-            top: 4%;
-            left: 25%;
-            transform: rotate(-15deg);
-            z-index: 2;
-        }
+                figure {
+                    border-top: 1rem solid var(--white);
+                    border-left: 1rem solid var(--white);
+                    border-right: 1rem solid var(--white);
+                    border-bottom: 4rem solid var(--white);
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
 
-        &:nth-of-type(3) {
-            position: absolute;
-            top: 10%;
-            left: 56%;
-            transform: rotate(15deg);
-            z-index: 3;
-        }
+                    &:hover {
+                        box-shadow: var(--box-shadow);
+                        transform: translateY(-1rem) scale(1.1);
 
-        &:nth-of-type(4) {
-            position: absolute;
-            top: 24%;
-            left: 6%;
-            transform: rotate(20deg);
-            z-index: 1;
-        }
+                        img {
+                            filter: grayscale(0);
+                        }
+                    }
 
-        &:nth-of-type(5) {
-            position: absolute;
-            top: 2%;
-            right: 3%;
-            transform: rotate(5deg);
-            z-index: 2;
-        }
+                    img {
+                        object-fit: cover;
+                        object-position: center;
+                        border: 1px solid var(--grey);
+                        height: 100%;
+                        filter: grayscale(1);
+                    }
 
-        &:nth-of-type(6) {
-            position: absolute;
-            top: 20%;
-            left: 40%;
-            transform: rotate(15deg);
-            z-index: 3;
-        }
-
-        article {
-            figure {
-                height: 18rem;
-                padding: 0;
-                margin: 0;
-                img {
-                    width: 21.5rem;
-                    height: 17.9rem;
-                }
-                figcaption {
-                    top: 19rem;
+                    figcaption {
+                        position: absolute;
+                        top: 18rem;
+                    }
                 }
             }
         }
-        &:hover {
-            transform: rotate(0deg);
-            z-index: 10;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: var(--pink-mid4);
+
+            &:after {
+                font-size: 4rem;
+            }
+        }
+
+        .swiper-pagination-bullet {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: var(--pink-mid4);
         }
     }
 }
+
 /*
 .showcased-projects {
     display: flex;
