@@ -96,11 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const swiper = new Swiper(".swiper", {
     loop: true,
-    speed: 600,
-
-    autoplay: {
-        delay: 3000,
-    },
+    speed: 800,
 
     navigation: {
         nextEl: ".swiper-button-next",
@@ -108,27 +104,19 @@ const swiper = new Swiper(".swiper", {
     },
     pagination: {
         el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
     },
     breakpoints: {
-        320: {
+        500: {
             slidesPerView: 2,
         },
-        560: {
+        800: {
             slidesPerView: 3,
         },
-        990: {
-            slidesPerView: 4,
-        },
     },
-    effect: "coverflow",
     grabCursor: true,
-    centeredSlides: true,
     slidesPerView: "auto",
-    coverflowEffect: {
-        rotate: 40,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: false,
-    },
 });

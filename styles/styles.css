@@ -1567,45 +1567,65 @@ a.bottom-projects:active {
   border-top: 1rem solid var(--white);
   border-right: 1rem solid var(--white);
   border-bottom: 1rem solid var(--white);
-  background-color: var(--light-pink);
-  /* background image */
-  background-size: cover;
+  background-color: var(--transparent-white);
+  background-image: url(../images/projects-preview2.jpg);
   background-blend-mode: soft-light;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 0%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.showcased-projects h1 {
+  font-size: clamp(2rem, 6vw, 6rem);
+  margin-bottom: 0.5rem;
+}
 .showcased-projects .swiper {
-  width: 80vw;
-  height: 70%;
+  width: 82dvw;
+  height: 80dvh;
+  padding: 1rem;
+}
+.showcased-projects .swiper .swiper-slide {
+  padding: 0;
 }
 .showcased-projects .swiper .swiper-slide article {
-  width: 80%;
-  height: 55%;
+  width: 75%;
+  height: 65%;
   position: relative;
   padding: 1.5rem;
+  transform: rotate(10deg);
+  transition: all 0.6s ease-out;
+  filter: grayscale(1);
+}
+.showcased-projects .swiper .swiper-slide article:hover {
+  filter: grayscale(0);
+}
+.showcased-projects .swiper .swiper-slide article:hover figure {
+  box-shadow: var(--box-shadow);
+  transform: rotate(-10deg) translateY(-1rem) scale(1.05);
+  transition: all 0.6s ease-out;
+  box-shadow: 0 0 0 1px var(--bright-pink), var(--box-shadow);
+}
+.showcased-projects .swiper .swiper-slide article:hover figcaption {
+  display: block;
 }
 .showcased-projects .swiper .swiper-slide article figure {
   border-top: 1rem solid var(--white);
   border-left: 1rem solid var(--white);
   border-right: 1rem solid var(--white);
   border-bottom: 4rem solid var(--white);
+  border-radius: 0.15rem;
+  box-shadow: 0 0 0 1px var(--grey), var(--box-shadow);
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.showcased-projects .swiper .swiper-slide article figure:hover {
-  box-shadow: var(--box-shadow);
-  transform: translateY(-1rem) scale(1.1);
-}
-.showcased-projects .swiper .swiper-slide article figure:hover img {
-  filter: grayscale(0);
+  padding: 0;
+  margin: 0;
 }
 .showcased-projects .swiper .swiper-slide article figure img {
   -o-object-fit: cover;
@@ -1614,11 +1634,15 @@ a.bottom-projects:active {
      object-position: center;
   border: 1px solid var(--grey);
   height: 100%;
-  filter: grayscale(1);
 }
 .showcased-projects .swiper .swiper-slide article figure figcaption {
   position: absolute;
-  top: 18rem;
+  top: 18.25rem;
+  display: none;
+  font-family: "Square Peg", serif;
+  font-size: 2.5rem;
+  color: var(--pink-mid4);
+  transition: all 0.6s ease-out;
 }
 .showcased-projects .swiper .swiper-button-next,
 .showcased-projects .swiper .swiper-button-prev {
@@ -1631,6 +1655,13 @@ a.bottom-projects:active {
 .showcased-projects .swiper .swiper-pagination-bullet {
   width: 1.5rem;
   height: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-family: var(--paragraph-text);
+  color: var(--white);
+  text-shadow: var(--text-shadow3);
 }
 .showcased-projects .swiper .swiper-pagination-bullet-active {
   background-color: var(--pink-mid4);
