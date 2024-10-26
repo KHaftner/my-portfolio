@@ -139,6 +139,10 @@ a.bottom-projects:active {
     h1 {
         font-size: clamp(2rem, 5vw, 5rem);
         margin: 1rem;
+        color: var(--pink-dark2);
+        letter-spacing: 0.25rem;
+        text-shadow: var(--text-shadow3);
+        text-align: center;
     }
 
     .swiper {
