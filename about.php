@@ -4,7 +4,7 @@ require "head.php";
 include "svgs.php";
 ?>
 
-<!-- Index Page Body. -->
+<!-- About Page Body. -->
 <body>
     <!-- For Screen Readers: Skip to Content. -->
     <a href="#site-main" class="screen-reader-text">Skip to Content</a>
