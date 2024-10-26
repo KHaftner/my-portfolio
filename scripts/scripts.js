@@ -95,8 +95,13 @@ document.addEventListener("DOMContentLoaded", function () {
 */
 
 const swiper = new Swiper(".swiper", {
-    loop: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    slidesPerGroupSkip: 1,
+    rewind: true,
+    loop: false,
     speed: 800,
+    spaceBetween: 0,
 
     navigation: {
         nextEl: ".swiper-button-next",
@@ -109,12 +114,27 @@ const swiper = new Swiper(".swiper", {
             return '<span class="' + className + '">' + (index + 1) + "</span>";
         },
     },
+    keyboard: {
+        enabled: true,
+    },
     breakpoints: {
-        500: {
+        600: {
             slidesPerView: 2,
+            slidesPerGroup: 1,
         },
         800: {
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+        },
+
+        1000: {
             slidesPerView: 3,
+            slidesPerGroup: 1,
+        },
+
+        1200: {
+            slidesPerView: 3.5,
+            slidesPerGroup: 1,
         },
     },
     grabCursor: true,
