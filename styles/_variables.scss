@@ -93,7 +93,7 @@
         var(--pink-darker6) 5px 5px 0px 0px;
     --solid-button-shadow: 0px 10px 13px -7px var(--pink-darker6),
         10px 10px 0px 2px var(--pink-darker6);
-    --bottom-shadow: 0px 2px 4px var(--pink-darker6);
+    --bottom-shadow: 0px 2px 4px var(--grey);
     --text-shadow: var(--pink-lighter5) 4px 4px 0px,
         var(--pink-darker6) 5px 5px 0px;
     --text-shadow2: var(--pink-lighter5) 1.5px 1.5px 0px,
@@ -102,4 +102,5 @@
     --heading-text-shadow: 2px 2px 1px #4d4d4d;
     --nav-text-shadow: 0px 1px 1px #808080c9;
     --text-shadow3: 1px 1px 1px #4d4d4d;
+    --text-shadow4: 2px 2px 6px #ffffff;
 }

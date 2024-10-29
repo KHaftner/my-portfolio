@@ -28,26 +28,32 @@ include "svgs.php";
                         </header>
                         <article class="about-me">
                             <div class="text-about-me">
-                                <h2>Relevant Education.</h2>
-                                    <h3>Bachelor of Computing Science (In Progress)</h3>
-                                    <p>
-                                        <strong>Thompson Rivers University (TRU)  -></strong>
-                                        <em>January 2024 - Present</em>
-                                    </p>
-                                    <h3>Front-End Web Developer Certificate</h3>
-                                    <p>
-                                        <strong>British Columbia Institute of Technology (BCIT)  -></strong>
-                                        <em>January 2023 - July 2023</em>
-                                <h2>Work Experience.</h2>
-                                    <h3>Web Developer</h3>
-                                        <strong>Freelance -></strong>
-                                        <em>October 2024 - Present</em>
-                                    <h3>Ambulatory Booking Clerk/Secretary</h3>
-                                        <strong>Vancouver Coastal Health (VCH)  -></strong>
-                                        <em>November 2012 - December 2023</em>
-                                <p>
-                                🌸 
-                                </p>
+                                <h2>Relevant Education</h2>
+                                <div class="education">
+                                        <h3>Bachelor of Computing Science (In Progress)</h3>
+                                        <p>
+                                            <strong>Thompson Rivers University (TRU)  &rarr;</strong>
+                                            <em>January 2024 - Present</em>
+                                        </p>
+                                        <h3>Front-End Web Developer Certificate</h3>
+                                        <p>
+                                            <strong>British Columbia Institute of Technology (BCIT)  &rarr;</strong>
+                                            <em>January 2023 - July 2023</em>
+                                        </p>
+                                </div>
+                                <h2>Work Experience</h2>
+                                <div class="experience">
+                                        <h3>Web Developer</h3>
+                                        <p>
+                                            <strong>Freelance &rarr;</strong>
+                                            <em>January 2024 - Present</em>
+                                        </p>
+                                        <h3>Booking Clerk</h3>
+                                        <p>
+                                            <strong>Vancouver Coastal Health (VCH)  &rarr;</strong>
+                                            <em>November 2012 - December 2023</em>
+                                        </p>
+                                </div>
                             </div>
                             <figure>
                                 <img src="images/kassandra-pic.jpg" alt="A photo of myself" class="me-pic" />
