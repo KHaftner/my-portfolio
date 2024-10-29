@@ -1034,11 +1034,13 @@ video {
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
-.below-fold-content h2 {
+.below-fold-content div.intro-message {
+  margin-right: 5rem;
+}
+.below-fold-content div.intro-message h2 {
   font-family: var(--heading-text);
   color: var(--bright-pink);
   font-size: clamp(4rem, 8vw, 8rem);
@@ -1047,7 +1049,7 @@ video {
   text-align: right;
   letter-spacing: 0.5rem;
 }
-.below-fold-content .p-container {
+.below-fold-content div.intro-message .p-container {
   background-color: var(--transparent-pink);
   max-width: 35rem;
   font-weight: 700;
@@ -1056,7 +1058,7 @@ video {
   box-shadow: -1rem -1rem 0px 0px var(--transparent-white);
   border: 1px solid var(--transparent-white-2);
 }
-.below-fold-content p {
+.below-fold-content div.intro-message p {
   padding: 2.5rem 2rem;
   margin: 0;
   font-size: 1.1rem;
@@ -1080,7 +1082,7 @@ video {
   background-position: 100% 50%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .bottom-content-wrapper {
@@ -1096,16 +1098,24 @@ video {
 .bottom-content-top h2 {
   font-family: var(--heading-text);
   color: var(--pink-dark2);
-  font-size: clamp(4rem, 5vw, 8rem);
+  font-size: clamp(4rem, 8vw, 8rem);
   letter-spacing: 0.25rem;
-  margin: 0.5rem auto 0;
+  margin: 2rem auto;
   text-shadow: var(--text-shadow3);
   text-align: center;
 }
 
+section.bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
 a.main-card {
   text-decoration: none;
-  margin: 2rem auto 1rem;
+  margin: 4rem 1rem;
   padding: 0;
   border-top: 1rem solid var(--white);
   border-left: 1rem solid var(--white);
