@@ -56,7 +56,7 @@ include "svgs.php";
                                 </div>
                             </div>
                             <figure>
-                                <img src="images/kassandra-pic.jpg" alt="A photo of myself" class="me-pic" />
+                                <img src="images/pic-of-me.jpg" alt="A photo of myself" class="me-pic" />
                             </figure>
                         </article>
                     </section>

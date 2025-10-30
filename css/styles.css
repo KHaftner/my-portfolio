@@ -604,7 +604,7 @@ video {
 .site-header {
   transition: all ease 0.5s;
   padding: 0;
-  width: 12.5rem;
+  width: 14rem;
   position: sticky;
   z-index: 9999;
   top: 0;
@@ -680,7 +680,7 @@ video {
   padding: 0 1rem 0 0;
   display: flex;
   flex-direction: column;
-  width: 12.5rem;
+  width: 12rem;
   height: auto;
   position: relative;
 }

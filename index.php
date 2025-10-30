@@ -107,17 +107,6 @@ include "svgs.php";
                                 </article>
                             </a>
 
-                            <a class="main-card" href="blog.php">
-                                <article class="blog-card">
-                                    <figure>
-                                        <img src="images/my-blog.jpg" alt="Scrabble tiles that spell the word 'BLOG'.">
-                                        <figcaption>
-                                            My Blog
-                                        </figcaption>
-                                    </figure>
-                                </article>
-                            </a>
-
                             <a class="main-card" href="contact.php">
                                 <article class="contact-card">
                                     <figure>
