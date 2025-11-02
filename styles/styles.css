@@ -1592,8 +1592,8 @@ a.bottom-projects:active {
   text-align: center;
 }
 .showcased-projects .swiper {
-  width: min(85dvw, 100rem);
-  height: 80dvh;
+  width: min(55dvw, 65rem);
+  height: 60dvh;
   padding: 5rem;
 }
 .showcased-projects .swiper .swiper-button-next,
@@ -1893,21 +1893,5 @@ ul.contact-text {
     width: 30rem;
   }
 }
-.post {
-  margin: 2rem auto;
-  background-color: var(--pink-lighter4);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  max-width: 96%;
-  border: 1px solid var(--purple-darker3);
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 43.75em) {
-  .post {
-    max-width: 38rem;
-  }
-}
-/* Test */
 
 /*# sourceMappingURL=styles.css.map */
