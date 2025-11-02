@@ -43,6 +43,11 @@ include "svgs.php";
                                 </div>
                                 <h2>Work Experience</h2>
                                 <div class="experience">
+                                        <h3>AI Data Annotator</h3>
+                                        <p>
+                                            <strong>Freelance &rarr;</strong>
+                                            <em>January 2025 - Present</em>
+                                        </p>
                                         <h3>Web Developer</h3>
                                         <p>
                                             <strong>Freelance &rarr;</strong>
@@ -60,85 +65,6 @@ include "svgs.php";
                             </figure>
                         </article>
                     </section>
-                    <section class="q-and-a">
-                        <h3>Questions & Answers</h3>
-                            <details>
-                                <summary>What's your favourite thing about front-end web development?</summary>
-                                <p>Fighting with CSS! 💗 Also, I love that feeling I get when something in JavaScript begins
-                                        to make more
-                                        sense to me and finally
-                                        clicks in my brain. Often, I'll feel like I understand something JS-related in
-                                        theory, but in practice, it takes a little while for it to pop into my head naturally as
-                                        a
-                                        solution to something. It feels so good when that happens!
-                                </p>
-                            </details>
-                            <details>
-                                    <summary>What is your MBTI personality type?</summary>
-                                    <p>INFP - The Mediator. And yup, I agree with that result.</p>
-                                </details>
-                                <details>
-                                    <summary>What is your favourite animal?</summary>
-                                    <p>Dogs! Specifically my dog, Abby, who is the greatest dog to have ever roamed the
-                                        earth.</p>
-                                </details>
-                                <details>
-                                    <summary>What is your favourite colour?</summary>
-                                    <p>Hmmm, oh man, that's a <em>tough</em> one... 😂 Just kidding. Bet you're not
-                                        surprised to hear that it's pink. 🌸</p>
-                                </details>
-                                <details>
-                                    <summary>What kind of music do you listen to?</summary>
-                                    <p>Mainly classic metal, power metal, and alternative rock with clean vocals. I'm
-                                        not a fan of screaming
-                                        in music, though I don't mind a
-                                        well-placed Bruce Dickinson-style scream here and there. My top two favourite bands
-                                        are Iron Maiden and
-                                        Stratovarius (can't decide, declaring it a tie). My favourite albums from
-                                        start-to-finish are Seventh Son of a Seventh
-                                        Son by Iron Maiden (my #1 by far), Carolus Rex by Sabaton, Virus by Heavenly,
-                                        Painkiller by Judas
-                                        Priest, Elysium by Stratovarius, Three Cheers for Sweet
-                                        Revenge by MCR (teenage nostalgia!), Stormcrow by Cain's Offering, Operation: Mindcrime
-                                        by
-                                        Queensrÿche, and Billy Talent III by BT.</p>
-                                </details>
-                                <details>
-                                    <summary>What is your favourite movie?</summary>
-                                    <p>Interstellar. A mix of neat sci-fi and the power of love saving the day... And they
-                                        pulled it off brilliantly! I dig that.
-                                    </p>
-                                </details>
-                                <details>
-                                    <summary>What is your favourite thing to do in your free time?</summary>
-                                    <p>Honestly, I'm happiest during a cozy night in with my spouse and my pup. They mean
-                                        the world to me, and all our time together is precious.</p>
-                                </details>
-                                <details>
-                                    <summary>Do you like video games?</summary>
-                                    <p>Yeah! I mainly play turn-based strategy games like Fire Emblem and turn-based role
-                                        playing games like Trails & old school Final Fantasy. I subscribe to FF14 Online
-                                        during the year when I have enough time to play. I also play several phone games:
-                                        Langrisser Mobile, Honkai Star Rail, Princess Connect JP, Arknights, and
-                                        <s>Farmville 3</s> (hey, don't judge me 😂).
-                                    </p>
-                                </details>
-                                <details>
-                                    <summary>What is your favourite thing to eat?</summary>
-                                    <p>Fish & Chips!</p>
-                                </details>
-                                <details>
-                                    <summary>Do you do any crafty things?</summary>
-                                    <p>I like to crochet! My favourite thing to make is blankets. Nice long project to keep
-                                        me busy while I binge watch Friends for the 100th time (that show never gets old).
-                                    </p>
-                                </details>
-                                <details>
-                                    <summary>What's your favourite season?</summary>
-                                    <p>Spring! I love that time of the year when winter starts fading away and the cherry
-                                        blossom trees start to bloom.</p>
-                                </details>
-                        </section>
                         <section class="skills-list" id="skills-list">
                             <h2 data-aos="fade-right" data-aos-delay="200">My Skillset.</h2>
                             <ul>
